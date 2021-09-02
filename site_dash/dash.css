@@ -1,0 +1,52 @@
+.divGrid {
+    width: 800px;
+    display: grid;
+    grid-template-areas: area1 area2 area3 area4 area5 area6;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 55px);
+    align-items: center;
+}
+
+.comboTotem{
+    height: 20px;
+    width: 150px;
+}
+
+.container{
+    max-width: 90%;
+    margin: 8vh auto;
+}
+
+.fundo{
+    height: 350px;
+    background-color: grey;
+}
+
+.fundoGrafico{
+    margin: auto;
+    border-radius: 10px;
+    width: 400px;
+    height: 250px;
+    background-color: yellow;
+}
+
+.caixa-dash{
+    background-color: gray;
+    padding: 50px;
+}
+
+.divGraficos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    grid-gap: 20px;
+}
+
+.grafico {
+    background-color: yellow;
+    border-radius: 15px;
+}
+
+.grafico canvas {
+    width: 200px;
+}
