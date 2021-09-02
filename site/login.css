@@ -26,7 +26,7 @@ ul li {
     text-decoration: none;
     color: #FFC702;
     font-family: 'Squada One', cursive;
-    font-size: 40px;
+    font-size: 28px;
 }
 .nav_header a:hover{
     transform: scale(2.0);
@@ -38,7 +38,7 @@ ul li {
 
 li {
     margin: 0 20px;
-    font-size: large;
+    font-size: 25px;
 }
 
 .caixa {
@@ -54,7 +54,7 @@ li {
     padding-left: 50px;
 }
 .login_text{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 20px;
     width: 40%;
     height: 400px;
@@ -63,8 +63,7 @@ li {
     margin-right: 380px;
     text-align: center;
     /* padding-top: 35px; */
-    box-shadow: #ffc702 4px 4px;
-    opacity: 0.9;
+   
 
 }
 .placeholder {
@@ -96,7 +95,7 @@ li {
     transition: ease-out 0.3s;
     color: white;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'PoPPins', sans-serif;
 }
 #form_login button:hover{
