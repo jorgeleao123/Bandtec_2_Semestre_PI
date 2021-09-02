@@ -7,14 +7,6 @@
     list-style: none;
 }
 
-html{
-    --yeelow: #FFC702;
-    --black: #0E0D0D;
-    --background: #F6FAFF;
-    --white: #FFF;
-
-    font-size: 62.5%; /* 10px - 1rem = 1px */
-}
 
 body{
     background-color: var(--background);
@@ -26,7 +18,6 @@ body{
     background-image: url("../imgs/bg-metro-home.svg");
     background-repeat: no-repeat;
     background-size: cover;
-
     width: 100vw;
     height: 90vh;
 }
@@ -39,23 +30,49 @@ section .container{
 section .container .nav-bar{
     color: var(--white);
     font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-weight: 500;
     text-transform: uppercase;
-    
-    justify-content: flex-end;
+    padding-top: 3.5rem;
+    float: right;
 }
 
 section .container .nav-bar-item:nth-child(2),
 section .container .nav-bar-item:nth-child(3),
 section .container .nav-bar-item:nth-child(4),
 section .container .nav-bar-item:nth-child(5){
-    margin-left: 2rem;
+    margin-left: 3.5rem;
+}
+
+section .container .nav-bar-item:first-child{
+    color: var(--yeelow);
 }
 
 ul li{
     display: inline;
 }
+
+section .container .logo-home{
+    width: 28rem;
+    margin-top: 10rem;
+}
+
+section .container .slogan{
+    float: right;
+    font-size: 4.2rem;
+    font-weight: 200;
+    color: var(--yeelow);
+    line-height: 4.4rem;
+}
+
+section .container .exp{
+    font-weight: 600;
+    color: var(--white);
+    font-size: 5.6rem;
+}
+
+
+
 
 
 
