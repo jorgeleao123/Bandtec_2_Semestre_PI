@@ -1,4 +1,5 @@
 * {
+    font-family: 'Poppins', sans-serif;
     padding: 0;
     border: 0;
     margin: 0;
@@ -71,13 +72,7 @@ section .container .exp{
     font-size: 5.6rem;
 }
 
-
-
-
-
-
-
-
-
-
-
+.text {
+    font-size: 62.5%; /* 10px - 1rem = 1px */
+    font-family: 'Poppins', sans-serif; 
+}
