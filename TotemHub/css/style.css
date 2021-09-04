@@ -20,6 +20,7 @@ body{
     background-size: cover;
     width: 100vw;
     height: 90vh;
+    overflow: hidden;
 }
 
 section .container{
@@ -71,8 +72,17 @@ section .container .exp{
     font-size: 5.6rem;
 }
 
+.div-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+}
 
 
+.icons {
+    width: 50px;
+}
 
 
 
