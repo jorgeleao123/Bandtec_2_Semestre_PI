@@ -17,20 +17,20 @@ body{
 }
 
 ul li {
-    color: #FFC702;
+    color: white;
     display: inline;
     font-size: 20px;
     }
 
 .nav_header a{
     text-decoration: none;
-    color: #FFC702;
+    color: white;
     font-family: 'Squada One', cursive;
-    font-size: 28px;
+    font-size: 40px;
 }
 .nav_header a:hover{
     transform: scale(2.0);
-    color:  white;
+    color:  #FFC702;
 }
 .fundo_login nav {
         float: right;
@@ -38,7 +38,7 @@ ul li {
 
 li {
     margin: 0 20px;
-    font-size: 25px;
+    font-size: large;
 }
 
 .caixa {
@@ -62,9 +62,6 @@ li {
     margin-top: 25px;
     margin-right: 380px;
     text-align: center;
-    /* padding-top: 35px; */
-   
-
 }
 .placeholder {
     color: white;
@@ -83,6 +80,10 @@ li {
     font-size: 25px;
     color: white;
 }
+.ipt:focus, input:focus {
+    border-color: #ffc702;
+      transition: ease-out 0.20s;
+  } 
 #form_login button{
     margin-left: 40px;
     height: 45px;
@@ -95,7 +96,7 @@ li {
     transition: ease-out 0.3s;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'PoPPins', sans-serif;
 }
 #form_login button:hover{
