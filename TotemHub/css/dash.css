@@ -77,3 +77,17 @@ canvas{
     font-weight: normal;
     font-size: 14px;
 }
+
+#indicadores {
+    height: 40px;
+    width: 170px;
+    background-color: var(--green);
+    border: solid 1px var(--black);
+    float: right;
+    margin: -70px;
+}
+
+.indicators-text {
+    float: left;
+    margin: -37px;
+}
