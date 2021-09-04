@@ -12,15 +12,20 @@ body{
     background-color: var(--background);
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 
+.yellow{
+    color: var(--yellow);
+}
+
+/* First Page */
 .bg-img{
     background-image: url("../imgs/bg-metro-home.svg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
     height: 90vh;
-    overflow: hidden;
 }
 
 section .container{
@@ -46,7 +51,7 @@ section .container .nav-bar-item:nth-child(5){
 }
 
 section .container .nav-bar-item:first-child{
-    color: var(--yeelow);
+    color: var(--yellow);
 }
 
 ul li{
@@ -62,7 +67,7 @@ section .container .slogan{
     float: right;
     font-size: 4.2rem;
     font-weight: 200;
-    color: var(--yeelow);
+    color: var(--yellow);
     line-height: 4.4rem;
 }
 
@@ -72,19 +77,73 @@ section .container .exp{
     font-size: 5.6rem;
 }
 
-.div-grid {
+/* Second Page */
+
+.about-us{ 
+    height: 500px;
+    overflow-x: hidden;
+}
+
+section .div-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     grid-gap: 10px;
+
+    width: 100%;
 }
 
-
-.icons {
+section .div-grid .icons{
     width: 50px;
+    margin: 0 auto;
 }
 
 
+/* Third Page */
+.queue{
+    height: 474px;
+}
+
+.queue .bg-queue{
+    background-image: url(../imgs/bg-queue.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.queue .bg-queue .page-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.queue .bg-queue .page-container .content-bg-queue{
+    color: var(--white);
+    font-size: 4.2vw;
+    font-weight: 600;
+    padding-top: 10%;
+}
+
+.queue .bg-queue .page-container .second-content-bg-queue{
+    color: var(--white);
+    font-size: 2.6vw;
+}
+
+
+/* Fourth Page */
+
+.content-about-us{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.bg-yellow-about{
+    background-color: var(--yellow);
+    width: 100rem;
+    height: 126px;
+}
 
 
 

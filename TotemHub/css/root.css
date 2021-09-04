@@ -1,8 +1,9 @@
 :root{
-    --yeelow: #FFC702;
+    --yellow: #FFC702;
     --black: #0E0D0D;
     --background: #F6FAFF;
     --white: #FFF;
+    
     font-size: 62.5%; /* 10px - 1rem = 1px */
     font-family: 'Poppins',sans-serif;
 }
