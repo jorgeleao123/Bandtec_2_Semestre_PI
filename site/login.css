@@ -26,7 +26,7 @@ ul li {
     text-decoration: none;
     color: white;
     font-family: 'Squada One', cursive;
-    font-size: 40px;
+    font-size: 28px;
 }
 .nav_header a:hover{
     transform: scale(2.0);
