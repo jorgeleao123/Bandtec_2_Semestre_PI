@@ -1,9 +1,10 @@
 :root{
     --yellow: #FFC702;
+    --green: #00ff00;
     --black: #0E0D0D;
     --background: #F6FAFF;
     --white: #FFF;
-    
-    font-size: 62.5%; /* 10px - 1rem = 1px */
-    font-family: 'Poppins',sans-serif;
+    --background_graphic: #545353;
+
+    font-size: 62.5%;
 }

@@ -1,10 +1,12 @@
 * {
+    font-family: 'Poppins', sans-serif;
     padding: 0;
     border: 0;
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
     list-style: none;
+
 }
 
 
@@ -24,7 +26,7 @@ body{
     background-image: url("../imgs/bg-metro-home.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 99vw;
     height: 90vh;
 }
 
@@ -60,7 +62,7 @@ ul li{
 
 section .container .logo-home{
     width: 28rem;
-    margin-top: 10rem;
+    margin-top: 20rem;
 }
 
 section .container .slogan{
@@ -78,28 +80,43 @@ section .container .exp{
 }
 
 /* Second Page */
-
 .about-us{ 
     height: 500px;
     overflow-x: hidden;
 }
 
 section .div-grid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    grid-gap: 10px;
-
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%; 
 }
 
 section .div-grid .icons{
-    width: 50px;
+    width: 80px;
+    margin: 16vh 7.8vw 28px;
+}
+
+.about-us .div-grid div h3{
+    width: 210px;
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 0 auto;
+    color: var(--background_graphic);
+}
+
+.about-us .div-grid div p{
+    width: 210px;
+    text-align: center;
+    font-size: 1.4rem;
     margin: 0 auto;
 }
 
 
 /* Third Page */
+.just-about{
+    height: 330px;
+}
+
 .queue{
     height: 474px;
 }
@@ -112,7 +129,7 @@ section .div-grid .icons{
     height: 100%;
 }
 
-.queue .bg-queue .page-container{
+.page-container{
     width: 80%;
     margin: 0 auto;
 }
@@ -131,19 +148,37 @@ section .div-grid .icons{
 
 
 /* Fourth Page */
-
 .content-about-us{
     display: flex; 
     align-items: center;
-    justify-content: center;
-    margin-top: 50px;
+    margin-top: 164px;
 }
 
 .bg-yellow-about{
     background-color: var(--yellow);
-    width: 100rem;
-    height: 126px;
+    width: 1170px;
+    height: 124px;
 }
+
+.content-about{
+    color: black;
+    text-align: center;
+    margin-top: 46px;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: 'Squada One';
+}
+
+
+.content-about-us-text{
+    color: black;
+    margin-left: 68px;
+    margin-right: 128px;
+    font-size: 1.8rem;
+}
+
+
 
 
 
