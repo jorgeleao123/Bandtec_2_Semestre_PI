@@ -39,37 +39,32 @@
 
         <form id="form_login" method="post" onsubmit="">
 
-            <label class="custom-field one">
+            <div class="grid-cad">
                 <span class="placeholder"><img src="css/img/icones/cnpj-icon.svg" alt="CNPJ"
-                        style="width: 50px; height: 25px;">Empresa: </span>
-                <input class="ipt" name="nome_empresa" type="text" placeholder="  Razão social" onkeyup="" />
-            </label>
-            <br>
-            <br>
-            <label class="custom-field one">
-                <span class="placeholder"><img src="css/img/icones/cnpj-icon.svg" alt="CNPJ"
-                        style="width: 50px; height: 25px;">CNPJ: </span>
-                <input class="ipt" name="CNPJ" type="text" placeholder="      00.000.000/0000-00" onkeyup="" />
-            </label>
-            <br>
-            <br>
-            <label class="custom-field one">
-                <span class="placeholder"><img src="css/img/icones/padlock-icon.svg" alt="senha"
-                        style="width: 50px; height: 25px;">Senha: </span>
-                <input class="ipt" name="senha_cadastro" type="password" placeholder="        XXXXXXXXXX" onkeyup="" />
-            </label>
-            <br>
-            <br>
-            <label class="custom-field one">
-                <span class="placeholder"><img src="css/img/icones/padlock-icon.svg" alt="senha"
-                        style="width: 50px; height: 25px;">Confirmar: </span>
-                <input class="ipt" name="confirma_senha" type="password" placeholder="        XXXXXXXXXX" onkeyup="" />
-            </label>
-            <br>
-            <br>
-            <br>
+                    style="width: 50px; height: 25px;">Empresa: 
+                </span>
+                <input class="ipt" name="nome_empresa" type="text" placeholder="Razão social" onkeyup="" />
 
-            <button type="submit">Login</button>
+                <span class="placeholder"><img src="css/img/icones/cnpj-icon.svg" alt="CNPJ"
+                    style="width: 50px; height: 25px;">CNPJ: 
+                </span>
+                <input class="ipt" name="CNPJ" type="text" placeholder="00.000.000/0000-00" onkeyup="" />
+
+                <span class="placeholder"><img src="css/img/icones/padlock-icon.svg" alt="senha"
+                    style="width: 50px; height: 25px;">Senha: 
+                </span>
+                <input class="ipt" name="senha_cadastro" type="password" placeholder="XXXXXXXXXX" onkeyup="" />
+    
+                <span class="placeholder"><img src="css/img/icones/padlock-icon.svg" alt="senha"
+                    style="width: 50px; height: 25px;">Confirmar: 
+                </span>
+                <input class="ipt" name="confirma_senha" type="password" placeholder="XXXXXXXXX" onkeyup="" />
+            </div>
+
+            
+
+            <button type="submit" class="btn-cad">Login</button>
+           
 
         </form>
 
