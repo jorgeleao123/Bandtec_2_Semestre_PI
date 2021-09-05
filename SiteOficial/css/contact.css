@@ -83,6 +83,43 @@ textarea {
 
 .contato{
     display: flex;
+    
+}
+
+.left-contact{
+    height: 500px;
+    width: 50%;
+}
+
+
+.left-contact .container-left-contact{
+    margin: 45px 90px;
+}
+
+.left-contact h2{
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.left-contact p{
+    font-size: 1.4rem;
+}
+
+.left-contact .email-contact{
+    margin-top: 50px;
+}
+
+.left-contact .email-contact .icon-email{
+    width: 50px;
+    font-weight: 600;
+}
+
+.left-contact .tel-contact .icon-tel{
+    width: 50px;
+}
+
+.left-contact .tel-contact{
+    margin-top: 50px;
 }
 
 
@@ -131,14 +168,10 @@ button{
     border-radius: 10px;
 }
 
-.left-contact{
-    height: 500px;
-    width: 50%;
-    
-}
+
 
 .empty-space{
-    height: 150px;
+    height: 120px;
     background-color: white;
     
 }
@@ -155,17 +188,17 @@ button{
 }
 
 .footer .container-footer .text-left{
-    font-size: 4.5rem;
+    font-size: 3.6rem;
     font-weight: 600;
     float: left;
-    margin-top: 5px;
+    margin-top: 10px;
+    
 }
 
 .footer .container-footer .text-right{
     float: right;
     font-size: 1.4rem;
     color: var(--white);
-   vertical-align: middle;
-   margin-top: 35px;
+   margin-top: 30px;
 }
 

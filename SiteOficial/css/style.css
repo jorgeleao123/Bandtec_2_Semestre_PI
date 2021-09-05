@@ -22,7 +22,7 @@ body{
 
 /* First Page */
 .bg-img{
-    background-image: url("../img/back_cadEmpresa.jpg");
+    background-image: url("../img/bg-metro-home.svg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 99vw;
@@ -113,7 +113,8 @@ section .div-grid .icons{
 
 /* Third Page */
 .just-about{
-    height: 330px;
+    margin: 26vh auto;
+    height: 35vh;
 }
 
 .queue{
@@ -121,7 +122,7 @@ section .div-grid .icons{
 }
 
 .queue .bg-queue{
-    background-image: url(../img/bg-queue.svg);
+    background-image: url(../img/queue.svg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
