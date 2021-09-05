@@ -177,7 +177,7 @@ button{
 }
 
 .footer{
-    height: 100px;
+    height: 12vh;
     background-color: black;
     color: var(--yellow);
     vertical-align: text-top;
