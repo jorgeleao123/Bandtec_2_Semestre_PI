@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TotemHub | Cadastro</title>
     <link rel="stylesheet" href="../css/page_cad.css">
+    <script type="text/javascript" src="../js/funcoesCad.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <link href=" https://fonts.googleapis.com/css2?family=Squada+One&display=swap " rel="stylesheet">
-
 </head>
 
 <body>
@@ -21,9 +21,9 @@
             </span>
             <nav>
                 <ul class="nav_header">
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">LOGIN</a></li>
-                    <li><a href="">CADASTRO</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a style="color:#FFC702;" href="Page_Cad.html">CADASTRO</a></li>
                 </ul>
             </nav>
         </div>
@@ -37,33 +37,31 @@
 
     <div class="login_text">
 
-        <form id="form_login" method="post" onsubmit="">
+        <form id="form_login" onsubmit="">
 
             <div class="grid-cad">
                 <span class="placeholder"><img src="../img/cnpj-icon.svg" alt="CNPJ"
-                    style="width: 50px; height: 25px;">Empresa: 
+                        style="width: 50px; height: 25px;">Empresa:
                 </span>
                 <input class="ipt" name="nome_empresa" type="text" placeholder="Razão social" onkeyup="" />
 
                 <span class="placeholder"><img src="../img/cnpj-icon.svg" alt="CNPJ"
-                    style="width: 50px; height: 25px;">CNPJ: 
+                        style="width: 50px; height: 25px;">CNPJ:
                 </span>
-                <input class="ipt" name="CNPJ" type="text" placeholder="00.000.000/0000-00" onkeyup="" />
+                <input class="ipt" name="cnpj_empresa" type="text" placeholder="00.000.000/0000-00" onkeyup="" />
 
                 <span class="placeholder"><img src="../img/padlock-icon.svg" alt="senha"
-                    style="width: 50px; height: 25px;">Senha: 
+                        style="width: 50px; height: 25px;">Senha:
                 </span>
                 <input class="ipt" name="senha_cadastro" type="password" placeholder="XXXXXXXXXX" onkeyup="" />
-    
+
                 <span class="placeholder"><img src="../img/padlock-icon.svg" alt="senha"
-                    style="width: 50px; height: 25px;">Confirmar: 
+                        style="width: 50px; height: 25px;">Confirmar:
                 </span>
                 <input class="ipt" name="confirma_senha" type="password" placeholder="XXXXXXXXX" onkeyup="" />
             </div>
 
-            <button type="submit" class="btn-cad">Login</button>
-           
-
+            <button id="btn_login" type="onclick" class="btn-cad">Login</button>
         </form>
 
     </div>
