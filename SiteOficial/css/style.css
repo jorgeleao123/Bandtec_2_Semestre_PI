@@ -20,6 +20,7 @@ body{
     color: var(--yellow);
 }
 
+
 /* First Page */
 .bg-img{
     background-image: url("../img/bg-metro-home.svg");
@@ -179,8 +180,33 @@ section .div-grid .icons{
 }
 
 
+/* FOOTER: */
 
+.footer{
+    height: 12vh;
+    background-color: black;
+    color: var(--yellow);
+    vertical-align: text-top;
+}
 
+.footer .container-footer{
+    margin: 0 150px;
+}
+
+.footer .container-footer .text-left{
+    font-size: 3.6rem;
+    font-weight: 600;
+    float: left;
+    margin-top: 10px;
+    
+}
+
+.footer .container-footer .text-right{
+    float: right;
+    font-size: 1.4rem;
+    color: var(--white);
+   margin-top: 30px;
+}
 
 
 

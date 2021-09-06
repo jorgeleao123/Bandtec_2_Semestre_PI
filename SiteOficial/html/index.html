@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/root.css">
     <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/modal.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;900&display=swap"
         rel="stylesheet">
@@ -106,15 +107,75 @@
 
             <div class="content-about-us-text" style="color: black;">
 
-                TotemHub é uma start-up voltada a inovar a utilização dos transportes publicos,
-                mais precisamente das estações de metrô e trêm do Brasil e futuramente do mundo. Nossa equipe é formada
+                TotemHub é uma StartUp voltada a inovar a utilização dos transportes públicos,
+                mais precisamente estações de trêm e metrô do Brasil e futuramente do mundo. Nossa equipe é formada
                 por potenciais profissionais que tem como intuito transformar o futuro da tecnologia através da
-                <b style="color: var(--yellow);">experimentação e inovação</b> em todos os âmbitos da sociedade, em prol de facilitar a visualização
-                        dos totens das estações por meio de <b style="color: var(--yellow);" >dashboards e notificações</b> enviadas diretamente ao
-                        responsável pela organização e sustentação dos mesmos.
+                <b><a href="#abrirModal1" class="openmod"> 
+                    experimentação e inovação
+                </a></b> 
+                em todos os âmbitos da sociedade, em prol de facilitar a visualização dos totens das estações por meio de 
+                <b><a href="#abrirModal2" class="openmod">
+                    dashboards e notificações
+                </a></b> 
+                enviadas diretamente ao responsável pela organização e sustentação dos mesmos.
+            </div>
+
+
+        </div>
+        
+        <div id="abrirModal1" class="modal">
+
+            <!-- conteúdo do modal aqui -->
+            <div class="background-modal">
+                <h1>Por uma equipe revolucionária</h1>
+                <div class="equipe">
+                    <div class="perfil">
+                        <img src="../integrantes/Bruno.png" alt="">
+                        <h2> Bruno </h2>
+                        <p> Front-end </p>
+                    </div>
+                    <div class="perfil">
+                        <img src="../integrantes/Flavio.png" alt="">
+                        <h2> Flavio </h2>
+                        <p> Back-end </p>
+                    </div>
+                    <div class="perfil">
+                        <img src="../integrantes/Jorge.png" alt="">
+                        <h2> Jorge </h2>
+                        <p> Analista </p>
+                    </div>
+                    <div class="perfil">
+                        <img src="../integrantes/Nicolas.png" alt="">
+                        <h2> Nicolas </h2>
+                        <p> Analista </p>
+                    </div>
+                    <div class="perfil">
+                        <img src="../integrantes/Pedro.png" alt="">
+                        <h2> Pedro </h2>
+                        <p> Front-end </p>
+                    </div>
+                    <div class="perfil">
+                        <img src="../integrantes/Herculano.png" alt="">
+                        <h2> Vitor </h2>
+                        <p>Scrum Master</p>
+                    </div>
+                </div>
+                
+                <!-- x para fechar o modal e referenciado como # para ser "alvo" no target -->
+                <a href="#fechar" title="Fechar" class="fechar">x</a>
+            </div>
+        </div>
+        
+        <div id="abrirModal2" class="modal">
+            <div class="background-modal">
+                
+                
+                <a href="#fechar" title="fechar" class="fechar">x</a>
             </div>
         </div>
     </section>
+
+    
 
     <section class="contato">
 
@@ -182,12 +243,12 @@
 
     </div>
 
-    <div class="footer">
+    <footer class="footer">
         <div class="container-footer">
             <p class="text-left">TotemHub.</p>
             <p class="text-right">TODOS OS DIREITOS RESERVADOS © 2021</p>
         </div>
-    </div>
+    </footer>
 
 </body>
 
