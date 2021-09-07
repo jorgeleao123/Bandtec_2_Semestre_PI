@@ -21,7 +21,6 @@
     width: min-content;
     position: relative;
     text-align: center;
-    margin: 0;
     margin: 7% auto;
     padding: 15px 20px;
     background: var(--white);
@@ -72,7 +71,7 @@
     height: 13rem;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%); 
-    transition: 900ms ease-in-out;
+    transition: 600ms ease-in-out;
 }
 
 .perfil img:hover {
@@ -83,4 +82,31 @@
 
 .perfil > p {
     font-size: 1.4rem;
+}
+
+.grid-exemplares{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2rem 4rem;
+    align-items: center;
+}
+
+.img-exemplares {
+    height: 60%;
+    margin: auto;
+}
+
+.img-exemplares2 {
+    height: 75%;
+    margin: auto;
+}
+
+.img-exemplares:hover {
+    transition: 300ms linear;
+    height: 80%;
+}
+
+.img-exemplares2:hover{
+    transition: 300ms linear;
+    height: 105%;
 }
