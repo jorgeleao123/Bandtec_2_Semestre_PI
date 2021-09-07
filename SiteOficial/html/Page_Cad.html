@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TotemHub | Cadastro</title>
-    <link rel="stylesheet" href="../css/page_cad.css">
-    <script type="text/javascript" src="../js/funcoesCad.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-    <link href=" https://fonts.googleapis.com/css2?family=Squada+One&display=swap " rel="stylesheet">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/cadastro_user.css">
+    <script type="text/javascript" src="../js/funcoesUser.js"></script>
+    <title>TotemHub | Cadastro</title>
 </head>
 
 <body>
+
     <div class="fundo_login">
 
         <div class="caixa">
@@ -23,54 +25,44 @@
                 <ul class="nav_header">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="login.html">LOGIN</a></li>
-                    <li><a style="color:#FFC702;" href="Page_Cad.html">CADASTRO</a></li>
+                    <li><a style="color:#FFC702;" href="page_CadastroUser.html">CADASTRO</a></li>
                 </ul>
             </nav>
         </div>
 
     </div>
-
-    <div class="sub_title">
-        <a> Cadastre sua empresa </a>
+    <div class="sub_title_cad">
+        <a>Seja bem vindo à <a style="color:#FFC702;">TotemHub</a>!</a><br>
+        <a>Abaixo cadastre seus funcionários</a>
     </div>
+    <div class="cad_text_empresa">
 
+        <form id="form_cad" method="post" onsubmit="">
 
-    <div class="login_text">
-
-        <form id="form_login" onsubmit="">
-
-            <div class="grid-cad">
+            <!-- <label class="custom-field one"> -->
                 <span class="placeholder"><img src="../img/cnpj-icon.svg" alt="CNPJ"
-                        style="width: 50px; height: 25px;">Empresa:
-                </span>
-                <input class="ipt" name="nome_empresa" type="text" placeholder="Razão social" onkeyup="" />
+                    style="width: 50px; height: 25px;">Empresa: </span>
+            <input class="ipt" name="nome_empresa" type="text" placeholder="" onkeyup="" />
 
+            <!-- </label> -->
+            
+            <!-- <label class="custom-field one"> -->
                 <span class="placeholder"><img src="../img/cnpj-icon.svg" alt="CNPJ"
-                        style="width: 50px; height: 25px;">CNPJ:
-                </span>
-                <input class="ipt" name="cnpj_empresa" type="text" placeholder="00.000.000/0000-00" onkeyup="" />
-
-                <span class="placeholder"><img src="../img/padlock-icon.svg" alt="senha"
-                        style="width: 50px; height: 25px;">Senha:
-                </span>
-                <input class="ipt" name="senha_cadastro" type="password" placeholder="XXXXXXXXXX" onkeyup="" />
-
-                <span class="placeholder"><img src="../img/padlock-icon.svg" alt="senha"
-                        style="width: 50px; height: 25px;">Confirmar:
-                </span>
-                <input class="ipt" name="confirma_senha" type="password" placeholder="XXXXXXXXX" onkeyup="" />
-            </div>
-
-            <button id="btn_login" type="onclick" class="btn-cad">Login</button>
+                    style="width: 50px; height: 25px;">CNPJ: </span>
+                <input class="ipt" name="senha" type="text" placeholder="" onkeyup="" />
+            <!-- </label> -->
+            
+            <!-- <label class="custom-field one"> -->
+                <span class="placeholder"><img src="../img/padlock-icon.svg" alt="CNPJ"
+                    style="width: 50px; height: 25px;">Senha: </span>
+                <input class="ipt" name="senha" type="text" placeholder="" onkeyup="" />
+            <!-- </label> -->
+        
         </form>
 
-    </div>
+        <button id="cadastrar" type="submit">Cadastrar</button>
 
     </div>
-
-
-
-
 
 </body>
 
