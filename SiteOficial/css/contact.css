@@ -1,89 +1,12 @@
-/* 
-.leads {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 0.5rem;
-    margin: 20px auto;
-    width: max-content;
-}
-
-.cads {
-    display: grid;
-    grid-template-columns: repeat(2, 210px);
-}
-
-.cadastro-leads {
-    background-color: transparent;
-    border: 1px solid black;
-    color: white;
-    width: 200px;
-    height: 40px;
-}
-
-.cadastro-leads option {
-    color: var(--yellow);
-}
-
-::placeholder {
-    color: var(--background_graphic);
-    background-color: transparent;
-    padding: 0 5px;
-}
-
-textarea {
-    padding: 5px;
-}
-
-.mensagem-leads {
-    background-color: transparent;
-    border: 1px solid black;
-    color: white;
-    width: 435px;
-    height: 180px;
-}
-
-.btn-enviar {
-    width: 90px;
-    height: 40px;
-    margin-top: 15px;
-    cursor: pointer;
-}
-
-.btn-enviar :hover {
-    transform: translateY(-5px);
-} */
-
-/* .form-contact{
-    background-color: var(--yellow); 
-    width: 600px; 
-    height: 500px;
-}
-
-.form-contact .form-container{
-    justify-content: space-between;
-}
-
-.form-contact .form-container .inp-form{
-    margin-top: 4vh;
-    display: flex;
-    justify-content: space-around;
-}
-
-.form-contact .form-container .div-textarea{
-    margin-top: 4vh;
-    text-align: center;
-} */
 
 .form{
     height: 500px;
     /* display: flex; */
 }
 
-
-
 .contato{
     display: flex;
-    
+    margin: 0 0 9% 0;
 }
 
 .left-contact{
@@ -164,12 +87,6 @@ button{
     margin: 10px 10px;
     width: 80px;
     height: 30px;
-    background-color: #ccc;
+    background-color: var(--button);
     border-radius: 10px;
-}
-
-.empty-space{
-    height: 120px;
-    background-color: white;
-    
 }
