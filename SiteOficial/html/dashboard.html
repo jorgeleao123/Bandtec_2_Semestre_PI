@@ -9,7 +9,7 @@
         integrity="sha512-dnUg2JxjlVoXHVdSMWDYm2Y5xcIrJg1N+juOuRi0yLVkku/g26rwHwysJDAMwahaDfRpr1AxFz43ktuMPr/l1A=="
         crossorigin="anonymous">
         </script>
-        <script src="//code-sa1.jivosite.com/widget/AreNkN13XS" async></script>
+    <!-- <script src="//code-sa1.jivosite.com/widget/AreNkN13XS" async></script> -->
     <!-- script do google charts -->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js%22%3E"></script>
     <link rel="stylesheet" href="../css/dash.css">
@@ -24,8 +24,8 @@
 
     <div class="container">
         <div class="divGrid">
-            <img src="../img/logo-dashboard.svg"> <b></b>
-            <h1 class="textBemVindo"> Seja Bem Vindo(a) ao <b> TotemHub</b>, UserTeste </h1> 
+            <img src="../img/logo-dashboard.svg"> s
+            <h1 class="textBemVindo"> Seja Bem Vindo(a) ao <b> TotemHub</b>, UserTeste </h1>
             <!-- <img src="../img/logout.png" class="logoout"> -->
             <h2 class="textTotem"> Selecione o totem que deseja observar em destaque </h2>
             <select class="comboTotem">
@@ -39,6 +39,9 @@
     <div class="fundo">
         <div class="fundoGrafico">
             <div class="borda-dash">
+                <h2 class="indicators-text">
+                    &bull; Funcionamento do Totem
+                </h2>
                 <canvas id="chart"></canvas>
             </div>
 
@@ -50,7 +53,7 @@
                 <div class="grafico">
                     <div class="borda-dash">
                         <h2 class="indicators-text">
-                            Dash title
+                            &bull; Funcionamento da CPU
                         </h2>
                         <div id="indicadores"></div>
                         <canvas id="chart1"></canvas>
@@ -59,33 +62,23 @@
                 <div class="grafico">
                     <div class="borda-dash">
                         <h2 class="indicators-text">
-                            Dash title
+                            &bull; Uso de Memória
                         </h2>
                         <div id="indicadores"></div>
                         <canvas id="chart2"></canvas>
                     </div>
                 </div>
-                <div class="grafico">
+                <div class="grafico_comparativo">
                     <div class="borda-dash">
                         <h2 class="indicators-text">
-                            Dash title
+                            &bull; Gráfico Comparativo
                         </h2>
                         <div id="indicadores"></div>
                         <canvas id="chart3"></canvas>
                     </div>
                 </div>
-                <div class="grafico">
-                    <div class="borda-dash">
-                        <h2 class="indicators-text">
-                            Dash title
-                        </h2>
-                        <div id="indicadores"></div>
-                        <canvas id="chart4"></canvas>
-                    </div>
-                </div>
             </div>
         </div>
-
     </div>
 
 </body>
@@ -96,11 +89,11 @@
     var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: ['','Tempo de utilização (%)',''],
+            labels: ['', 'Ligado X Desligado', ''],
             datasets: [{
                 axis: 'y',
                 fill: false,
-                label: ['CPU'],
+                label: [' Funcionamento Totem'],
                 data: [95, 50, 25],
                 backgroundColor: [
                     '#0C63B9',
@@ -142,7 +135,7 @@
             datasets: [{
                 axis: 'y',
                 fill: false,
-                label: 'Sensores',
+                label: 'Tempo de utilização %',
                 data: [19, 10.5, 5.5, 16, 13, 7],
                 backgroundColor: [
                     '#0C63B9',
@@ -176,7 +169,7 @@
             datasets: [{
                 axis: 'y',
                 fill: false,
-                label: 'Sensores',
+                label: '% Uso de Memória',
                 data: [19, 10.5, 5.5, 16, 13, 7],
                 backgroundColor: [
                     '#0C63B9',
@@ -210,7 +203,7 @@
             datasets: [{
                 axis: 'y',
                 fill: false,
-                label: 'Sensores',
+                label: 'Diferenças de Dados',
                 data: [19, 10.5, 5.5, 16, 13, 7],
                 backgroundColor: [
                     '#0C63B9',
@@ -235,40 +228,4 @@
 
         }
     });
-
-    var ctx4 = chart4.getContext('2d');
-    var myChart4 = new Chart(ctx4, {
-        type: 'line',
-        data: {
-            labels: ['Azul', 'Verde', 'Roxo', 'Rosa', 'Cinza', 'Laranja'],
-            datasets: [{
-                axis: 'y',
-                fill: false,
-                label: 'Sensores',
-                data: [19, 10.5, 5.5, 16, 13, 7],
-                backgroundColor: [
-                    '#0C63B9',
-                    '#0CB963',
-                    '#7A0CB9',
-                    '#B90CA2',
-                    '#88838A',
-                    '#EF8204'
-                ],
-                borderColor: [
-                    '#000000',
-                    '#000000',
-                    '#000000',
-                    '#000000',
-                    '#000000',
-                    '#000000'
-                ],
-                borderWidth: 2
-            }]
-        },
-        options: {
-
-        }
-    });
-
-
 </script>
