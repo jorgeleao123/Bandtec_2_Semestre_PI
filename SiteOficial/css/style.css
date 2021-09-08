@@ -16,6 +16,10 @@ body{
     background-color: var(--background);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .yellow{
     color: var(--yellow);
 }
@@ -23,6 +27,11 @@ body{
 nav {
     list-style: none;
     cursor: pointer;
+}
+
+nav a{
+    text-decoration: none;
+    color: inherit;
 }
 
 li:hover{
@@ -89,7 +98,8 @@ section .container .exp{
 
 /* Second Page */
 .about-us{ 
-    height: 500px;
+    /* height: 500px; */
+    min-height: 80vh;
     overflow-x: hidden;
 }
 
@@ -214,6 +224,9 @@ section .div-grid .icons{
     color: var(--white);
    margin-top: 30px;
 }
+
+
+
 
 
 
