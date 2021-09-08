@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/cadastro_user.css">
-    <script type="text/javascript" src="../js/funcoesUser.js"></script>
+    <script type="text/javascript" src="../js/funcoesAgente.js"></script>
     <title>TotemHub | Login Funcionário</title>
 </head>
 
@@ -40,15 +40,15 @@
 
             <span class="placeholder"><img src="../img/user-icon.svg" alt="CNPJ"
                     style="width: 50px; height: 25px;">User: </span>
-            <input class="ipt" name="CNPJ" type="text" placeholder="" onkeyup="" />
+            <input id="usuarioAgente" class="ipt" name="CNPJ" type="text" placeholder="" onkeyup="" />
 
             <span class="placeholder"><img src="../img/padlock-icon.svg" alt="senha"
                     style="width: 50px; height: 25px;">Senha: </span>
-            <input class="ipt" name="senha" type="password" placeholder="" onkeyup="" />
+            <input id="senhaAgente" class="ipt" name="senha" type="password" placeholder="" onkeyup="" />
             
         </form>
         
-        <button id="button_login" type="submit">Login</button>
+        <button id="button_login" onclick="loginAgente()" type="submit">Login</button>
 
     </div>
   

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/cadastro_user.css">
     <script src="//code-sa1.jivosite.com/widget/AreNkN13XS" async></script>
-    <script type="text/javascript" src="../js/funcoesUser.js"></script>
+    <script type="text/javascript" src="../js/funcoesCadUser.js"></script>
     
     <title>TotemHub | Cadastro de Funcionários</title>
 </head>
@@ -44,37 +44,37 @@
             <!-- <label class="custom-field one"> -->
                 <span class="placeholder"><img src="../img/user-icon.svg" alt="CNPJ"
                     style="width: 50px; height: 25px;">Nome: </span>
-                <input class="ipt" name="CNPJ" type="text" placeholder="" onkeyup="" />
+                <input id="nome" class="ipt" name="CNPJ" type="text" placeholder="" onkeyup="" />
             <!-- </label> -->
             
             <!-- <label class="custom-field one"> -->
 
                 <span class="placeholder"><img src="../img/metro-icon.png" alt="CNPJ"
                     style="width: 28px; height: 28px;">Linha do Metrô:  </span>
-                <input class="ipt" name="senha" type="text" placeholder="" onkeyup="" />
+                <input id="linha" class="ipt" name="senha" type="text" placeholder="" onkeyup="" />
             <!-- </label> -->
             
             <!-- <label class="custom-field one"> -->
                 <span class="placeholder"><img src="../img/calculadora-icon.jpg" alt=""
                     style="width: 25px; height: 25px;">N° de Totens: </span>
-                <input class="ipt" name="senha" type="text" placeholder="" onkeyup="" />
+                <input  class="ipt" name="senha" type="text" placeholder="" onkeyup="" />
             <!-- </label> -->
             
             <!-- <label class="custom-field one"> -->
                 <span class="placeholder"><img src="../img/user-icon.svg" alt="CNPJ"
                     style="width: 50px; height: 25px;">User:  </span>
-                <input class="ipt" name="senha" type="text" placeholder="" onkeyup="" />
+                <input id="usuario" class="ipt" name="senha" type="text" placeholder="" onkeyup="" />
             <!-- </label> -->
             
             <!-- <label class="custom-field one"> -->
 
                 <span class="placeholder"><img src="../img/padlock-icon.svg" alt="CNPJ"
                     style="width: 50px; height: 25px;">Senha:  </span>
-                <input class="ipt" name="senha" type="password" placeholder="" onkeyup="" />
+                <input id="senha" class="ipt" name="senha" type="password" placeholder="" onkeyup="" />
             <!-- </label> -->
         </form>
 
-        <button id="cadastrar" type="submit">Cadastrar</button>
+        <button id="cadastrar" onclick="cadastrar()" type="submit">Cadastrar</button>
 
     </div>
 

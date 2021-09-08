@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/cadastro_user.css">
-    <script type="text/javascript" src="../js/funcoesUser.js"></script>
+    <script type="text/javascript" src="../js/funcoesCadEmp.js"></script>
     <title>TotemHub | Cadastro</title>
 </head>
 
@@ -42,25 +42,25 @@
             <!-- <label class="custom-field one"> -->
                 <span class="placeholder"><img src="../img/cnpj-icon.svg" alt="CNPJ"
                     style="width: 50px; height: 25px;">Empresa: </span>
-            <input class="ipt" name="nome_empresa" type="text" placeholder="" onkeyup="" />
+            <input id="nomeEmp" class="ipt" name="nome_empresa" type="text" placeholder="" onkeyup="" />
 
             <!-- </label> -->
             
             <!-- <label class="custom-field one"> -->
                 <span class="placeholder"><img src="../img/cnpj-icon.svg" alt="CNPJ"
                     style="width: 50px; height: 25px;">CNPJ: </span>
-                <input class="ipt" name="senha" type="text" placeholder="" onkeyup="" />
+                <input id="cnpjEmp" class="ipt" name="senha" type="number" placeholder="" onkeyup="" />
             <!-- </label> -->
             
             <!-- <label class="custom-field one"> -->
                 <span class="placeholder"><img src="../img/padlock-icon.svg" alt="CNPJ"
                     style="width: 50px; height: 25px;">Senha: </span>
-                <input class="ipt" name="senha" type="text" placeholder="" onkeyup="" />
+                <input id="senhaEmp" class="ipt" name="senha" type="text" placeholder="" onkeyup="" />
             <!-- </label> -->
         
         </form>
 
-        <button id="cadastrar" type="submit">Cadastrar</button>
+        <button onclick="cadastrarEmp()" id="cadastrar" type="submit">Cadastrar</button>
 
     </div>
 
