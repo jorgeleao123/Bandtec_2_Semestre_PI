@@ -3,6 +3,22 @@ body {
     background-color: var(--background);
 }
 
+.btn-dedicatoria {
+    height: 6vh;
+    width: 15vw;
+    border-radius: 10px;
+    transition: 900ms ease;
+    cursor: pointer;
+    margin: 0 0 5vh 43vw;
+    background-color: var(--yellow);
+    color: var(--footer);
+}
+
+.btn-dedicatoria:hover {
+    background-color: var(--footer);
+    color: var(--button);
+}
+
 .divGrid {
     width: 800px;
     display: grid;

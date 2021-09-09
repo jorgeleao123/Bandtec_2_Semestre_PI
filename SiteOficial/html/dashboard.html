@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../css/dash.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/root.css">
+    <script type="text/javascript" src="../js/funcoesEmp.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;900&display=swap"
         rel="stylesheet">
     <title>Dashboard</title>
@@ -24,7 +25,7 @@
 
     <div class="container">
         <div class="divGrid">
-            <img src="../img/logo-dashboard.svg"> s
+            <img src="../img/logo-dashboard.svg"> 
             <h1 class="textBemVindo"> Seja Bem Vindo(a) ao <b> TotemHub</b>, UserTeste </h1>
             <!-- <img src="../img/logout.png" class="logoout"> -->
             <h2 class="textTotem"> Selecione o totem que deseja observar em destaque </h2>
@@ -80,28 +81,17 @@
             </div>
         </div>
     </div>
-
+    <button onclick="voltar()" class="btn-dedicatoria">Voltar a Home</button>
     <footer class="footer">
         <div class="container-footer">
             <p class="text-left">TotemHub.</p>
             <p class="text-right">TODOS OS DIREITOS RESERVADOS © 2021</p>
         </div>
     </footer>
-
 </body>
 
 </html>
 <script>
-
-    // Nossos rótulos para o eixo X
-    var tempo_funcionamento = ["1h","2h","3h","4h","5h","6h","7h","8h"];
-
-// Para desenhar as linhas
-    const totem1 = [86,114,106,106,107,111,133,221,783,2478];
-    const totem2 = [282,320,411,502,635,809,947,1402,3700,5267];
-    const totem3 = [168,190,178,190,203,276,408,547,675,734];
-    const totem4 = [40,20,10,16,24,38,74,167,508,784];
-
     var ctx = chart.getContext('2d');
     var myChart = new Chart(ctx, {
         type: 'bar',
@@ -148,7 +138,7 @@
     var myChart1 = new Chart(ctx1, {
         type: 'line',
         data: {
-            labels: ['Azul', 'Verde', 'Roxo', 'Rosa', 'Cinza', 'Laranja'],
+            labels: ['1h', '2h', '3h', '4h', '5h', '6h'],
             datasets: [{
                 axis: 'y',
                 fill: false,
@@ -182,7 +172,7 @@
     var myChart2 = new Chart(ctx2, {
         type: 'line',
         data: {
-            labels: ['Azul', 'Verde', 'Roxo', 'Rosa', 'Cinza', 'Laranja'],
+            labels: ['1h', '2h', '3h', '4h', '5h', '6h'],
             datasets: [{
                 axis: 'y',
                 fill: false,
@@ -221,26 +211,26 @@
         { 
             data: totem1,
             label: "Totem 1",
-            borderColor: "#3e95cd",
+            borderColor: "#83D419",
             fill: false
 
         },
         { 
             data: totem2,
-            label: "Asia",
-            borderColor: "#3e95cd",
+            label: "Totem 2",
+            borderColor: "#19D4BA",
             fill: false
         },
         { 
             data: totem3,
-            label: "Europa",
-            borderColor: "#3e95cd",
+            label: "Totem 3",
+            borderColor: "#FA3425",
             fill: false
         },
         { 
             data: totem4,
-            label: "América Latina",
-            borderColor: "#3e95cd",
+            label: "Totem 4",
+            borderColor: "#FA6D21",
             fill: false
         },
         
