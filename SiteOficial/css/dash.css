@@ -45,18 +45,23 @@ body {
 .divGraficos{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 250px);
     grid-gap: 50px;
+    margin: 0 0 5% 0;
 }
 
 .grafico {
     border-radius: 15px;
     width: 450px;
 }
+
 .grafico_comparativo{
     border-radius: 15px;
     width: 450px;
+}
 
+.grafico_comparativo2{
+    border-radius: 15px;
+    margin: 0 auto;
 }
 
 .grafico canvas {
@@ -74,7 +79,13 @@ canvas{
     border-radius: 25px;
 }
 
-
+.borda-dash2{
+    background-color: var(--yellow);
+    height: max-content;
+    padding: 50px;
+    border-radius: 25px;
+    width: 100%;
+}
 
 .textBemVindo {
     font-size: 17px;

@@ -68,33 +68,50 @@
                         <canvas id="chart2"></canvas>
                     </div>
                 </div>
-                <div class="grafico_comparativo">
-                    <div class="borda-dash">
-                        <h2 class="indicators-text">
-                            &bull; Gráfico Comparativo
-                        </h2>
-                        <div id="indicadores"></div>
-                        <canvas id="chart3"></canvas>
-                    </div>
+                
+            </div>
+            <div class="grafico_comparativo2">
+                <div class="borda-dash2">
+                    <h2 class="indicators-text">
+                        &bull; Gráfico Comparativo
+                    </h2>
+                    <canvas id="chart3"></canvas>
                 </div>
             </div>
         </div>
     </div>
 
+    <footer class="footer">
+        <div class="container-footer">
+            <p class="text-left">TotemHub.</p>
+            <p class="text-right">TODOS OS DIREITOS RESERVADOS © 2021</p>
+        </div>
+    </footer>
+
 </body>
 
 </html>
 <script>
+
+    // Nossos rótulos para o eixo X
+    var tempo_funcionamento = ["1h","2h","3h","4h","5h","6h","7h","8h"];
+
+// Para desenhar as linhas
+    const totem1 = [86,114,106,106,107,111,133,221,783,2478];
+    const totem2 = [282,320,411,502,635,809,947,1402,3700,5267];
+    const totem3 = [168,190,178,190,203,276,408,547,675,734];
+    const totem4 = [40,20,10,16,24,38,74,167,508,784];
+
     var ctx = chart.getContext('2d');
     var myChart = new Chart(ctx, {
-        type: 'line',
+        type: 'bar',
         data: {
             labels: ['', 'Ligado X Desligado', ''],
             datasets: [{
                 axis: 'y',
                 fill: false,
                 label: [' Funcionamento Totem'],
-                data: [95, 50, 25],
+                data: [1, 0, 1],
                 backgroundColor: [
                     '#0C63B9',
                     '#0CB963',
@@ -199,33 +216,35 @@
     var myChart3 = new Chart(ctx3, {
         type: 'line',
         data: {
-            labels: ['Azul', 'Verde', 'Roxo', 'Rosa', 'Cinza', 'Laranja'],
-            datasets: [{
-                axis: 'y',
-                fill: false,
-                label: 'Diferenças de Dados',
-                data: [19, 10.5, 5.5, 16, 13, 7],
-                backgroundColor: [
-                    '#0C63B9',
-                    '#0CB963',
-                    '#7A0CB9',
-                    '#B90CA2',
-                    '#88838A',
-                    '#EF8204'
-                ],
-                borderColor: [
-                    '#000000',
-                    '#000000',
-                    '#000000',
-                    '#000000',
-                    '#000000',
-                    '#000000'
-                ],
-                borderWidth: 2
-            }]
-        },
-        options: {
+        labels: tempo_funcionamento,
+        datasets: [
+        { 
+            data: totem1,
+            label: "Totem 1",
+            borderColor: "#3e95cd",
+            fill: false
 
-        }
-    });
+        },
+        { 
+            data: totem2,
+            label: "Asia",
+            borderColor: "#3e95cd",
+            fill: false
+        },
+        { 
+            data: totem3,
+            label: "Europa",
+            borderColor: "#3e95cd",
+            fill: false
+        },
+        { 
+            data: totem4,
+            label: "América Latina",
+            borderColor: "#3e95cd",
+            fill: false
+        },
+        
+    ]
+  }
+});
 </script>
