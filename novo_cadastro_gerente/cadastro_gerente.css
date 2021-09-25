@@ -1,0 +1,112 @@
+body {
+    background-image: url(back_cad_gerente.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    overflow: hidden;
+}
+
+.divisao1 {
+    height: 100%;
+    width: 38%;
+    background-color: white;
+    position: absolute;
+}
+
+.divisao2 {
+    height: 60%;
+    width: 30%;
+    position: absolute;
+    margin: 20% 0 0 38%;
+    background-color: white;
+}
+
+.div_logo {
+    height: 10%;
+    width: 30%;
+    margin: 5% 2%;
+    float: left;
+}
+
+.gracinha {
+    height: 15%;
+    width: 28%;
+    float: right;
+    margin-top: 34%;
+}
+
+.grid_tabela_cadastrados {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 14fr;
+    position: relative;
+    margin-top: 56%;
+   
+}
+
+.btn_mostrar_cadastrados {
+    margin: 0 auto;
+}
+
+.tabela_cadastrados {
+    position: absolute;
+    height: 100px;
+    width: 500px;
+    background-color: black;
+}
+
+.form_cadastro_gerente {
+    /* border: 1px solid black; */
+    height: 83%;
+    width: 98%;
+    margin: 3% 1%;
+}
+
+.form_cadastro_gerente h4 {
+    width: 50%;
+    margin: 0.5rem 2rem;
+}
+
+.grid_form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    align-content: center;
+}
+
+.divisao2 h3 {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.inp_form {
+    border-radius: 5px;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+.btn_cadastrar_agente {
+    border-radius: 5px;
+    border-color: #232323;
+    margin: 2rem 7.5rem;
+}
+
+.combo_cadastro_agente {
+    text-align: center;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+.tabela_cadastrados {
+    background-color: black;
+    width: 60%;
+    margin: 30px auto;
+    height: 100%;
+}
+
+.tabela_escondida {
+    display: transparent;
+}

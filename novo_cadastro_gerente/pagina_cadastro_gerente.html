@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro_gerente.css">
+    <script src="cadastro_gerente.js"></script>
+    <title>Cadastro Gerente</title>
+</head>
+<body>
+    <div class="divisao_grid">
+        <div class="divisao1">
+            <div class="div_logo">
+
+            </div>
+            <div class="gracinha">
+
+            </div>
+            <div class="grid_tabela_cadastrados">
+                <button onclick="mostrar_cadastrado(1)" class="btn_mostrar_cadastrados"> MOSTRAR CADASTRADOS </button>
+                <div id="tabela_cadastrado" class="tabela_cadastrados">
+
+                </div>
+ 
+            </div>
+        </div>
+        <div class="divisao2">
+            <h3>Cadastre seus funcionários</h3>
+            <form action="" class="form_cadastro_gerente">
+                <div class="grid_form">
+                    <h4>Nome completo:</h4>
+                    <input type="text" placeholder="Nome completo do agente" class="inp_form">
+                    <h4>Empresa</h4>
+                    <select name="" id="" class="combo_cadastro_agente">
+                        <option value="">EMPRESAS</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                    <h4>Email:</h4>
+                    <input type="text" class="inp_form" placeholder="Email do agente">
+                    <h4>Senha:</h4>
+                    <input type="password" class="inp_form" placeholder="Crie uma senha para o agente">
+                </div>
+                
+                <button class="btn_cadastrar_agente"> CADASTRAR FUNCIONÁRIO </button>
+
+            </form>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
