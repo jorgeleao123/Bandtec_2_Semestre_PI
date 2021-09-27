@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cadastro_gerente.css">
+    <script src="../js/cadastro_gerente.js"></script>
+    <title>Cadastro Gerente</title>
+</head>
+<body>
+    <div class="divisao_grid">
+        <div class="divisao1">
+            <div class="div_logo">
+                <img src="../img/logo-dashboard.svg" alt="">
+            </div>
+            <div class="gracinha">
+
+            </div>
+            <div class="grid_tabela_cadastrados">
+                <button onclick="mostrar_cadastrado(1)" class="btn_mostrar_cadastrados"> MOSTRAR CADASTRADOS </button>
+                <div id="tabela_cadastrado" class="tabela_cadastrados">
+
+                </div>
+ 
+            </div>
+        </div>
+        <div class="divisao2">
+            <h2>Cadastre seus funcionários</h2>
+            <form action="" class="form_cadastro_gerente">
+                <div class="grid_form">
+                    <img src="../img/business.png" alt="" class="form_cadastro_icones">
+                    <input type="text" placeholder="Nome completo" class="inp_form">
+                    <img src="../img/train.png" alt="" class="form_cadastro_icones">
+                    <select name="" id="" class="combo_cadastro_agente">
+                        <option value="">EMPRESAS</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                    <img src="../img/email.png" alt="" class="form_cadastro_icones">
+                    <input type="text" class="inp_form" placeholder="Email do agente">
+                    <img src="../img/password.png" alt="" class="form_cadastro_icones">
+                    <input type="password" class="inp_form" placeholder="********">
+                </div>
+                
+                <button class="btn_cadastrar_agente"> CADASTRAR FUNCIONÁRIO </button>
+
+            </form>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
