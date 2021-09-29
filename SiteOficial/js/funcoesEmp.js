@@ -7,7 +7,7 @@ function loginEmp(){
                 setTimeout (300);
             }
             else{
-                window.location.href ="page_CadastroUser.html";
+                window.location.href ="pagina_cadastro_gerente.html";
             }
 }
 

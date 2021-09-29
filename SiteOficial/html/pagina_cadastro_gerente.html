@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/cadastro_gerente.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="../js/cadastro_gerente.js"></script>
     <title>Cadastro Gerente</title>
 </head>
@@ -27,21 +28,21 @@
         </div>
         <div class="divisao2">
             <h2>Cadastre seus funcionários</h2>
-            <form action="" class="form_cadastro_gerente">
+            <form class="form_cadastro_gerente" id="form_cadastro" method="post" onsubmit="return cadastrar()">
                 <div class="grid_form">
                     <img src="../img/business.png" alt="" class="form_cadastro_icones">
-                    <input type="text" placeholder="Nome completo" class="inp_form">
+                    <input type="text" placeholder="Nome completo" class="inp_form" id="inp_nome" name="nome" required minlength="4">
                     <img src="../img/train.png" alt="" class="form_cadastro_icones">
-                    <select name="" id="" class="combo_cadastro_agente">
+                    <select name="" id="" class="combo_cadastro_agente" class="inp_form">
                         <option value="">EMPRESAS</option>
                         <option value=""></option>
                         <option value=""></option>
                         <option value=""></option>
                     </select>
                     <img src="../img/email.png" alt="" class="form_cadastro_icones">
-                    <input type="text" class="inp_form" placeholder="Email do agente">
+                    <input type="text" class="inp_form" placeholder="Email do agente" id="inp_email" name="email" required minlength="4">
                     <img src="../img/password.png" alt="" class="form_cadastro_icones">
-                    <input type="password" class="inp_form" placeholder="********">
+                    <input type="password" class="inp_form" placeholder="********" id="inp_senha" name="senha" required minlength="4">
                 </div>
                 
                 <button class="btn_cadastrar_agente"> CADASTRAR FUNCIONÁRIO </button>

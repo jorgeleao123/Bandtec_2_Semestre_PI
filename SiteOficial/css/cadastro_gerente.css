@@ -49,7 +49,7 @@ body {
 .btn_mostrar_cadastrados {
     margin: 0 auto;
     width: 50%;
-    height: 114%;
+    height: 160%;
     border-radius: 5px;
     border-color: #232323;
     background-color: #232323;
@@ -100,6 +100,7 @@ body {
     border: 2px solid black;
     margin: 0 auto;
     width: 90%;
+    text-align: center;
 }
 
 .btn_cadastrar_agente {
@@ -124,7 +125,7 @@ body {
     border: 2px solid black;
     border-radius: 5px;
     margin: 0 auto;
-    width: 93%;
+    width: 90%;
 }
 
 ::placeholder {
