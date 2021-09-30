@@ -1,8 +1,31 @@
-# Bandtec TotemHub
+![Alt text](/SiteOficial/img/TotemHub.svg?raw=true "Logo")
+# TotemHub
 Projeto referente ao 2º semestre do curso de Analise e Desenvolvimento de Sistemas
 
-Faculdade: Bandtec 
+# Faculdade :school:
+Bandtec 
 
-Grupo: TotemHub
+# Grupo 
+TotemHub
 
-Integrantes: Vitor Herculao, Nicolas Guilherme, Jorge Ricardo Leão, Bruno Mendes, Pedro de Souza, Flavio Mauricio
+# Instalação 
+```bash
+$ npm init
+```
+# Instalação de Dependencias
+```bash
+$ npm install morgan 
+
+$ npm install nodemon 
+```
+# Verificar console :warning:
+Caso erro em rotas: 
+![Alt text](/SiteOficial/img/CodeSnap.png?raw=true "Erro Console")
+
+# Desenvolvedores :man_technologist:
+- Vitor Herculao 
+- Nicolas Guilherme
+- Jorge Ricardo Leão
+- Bruno Mendes 
+- Pedro de Souza
+- Flavio Mauricio
