@@ -6,11 +6,11 @@ Projeto referente ao 2º semestre do curso de Analise e Desenvolvimento de Siste
 Bandtec 
 
 # Grupo 
-TotemHub
+Grupo 2 ADS B
 
 # Instalação 
 ```bash
-$ npm init
+$ npm install
 ```
 # Instalação de Dependencias
 ```bash
