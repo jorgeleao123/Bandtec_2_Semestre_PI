@@ -127,7 +127,6 @@ form .input-field:first-child{
     margin-bottom: 1.5rem;
     
 }
-
  
 /* o elemento ".underline" se refere a linha abaixo do ipt. O ipt permanece ali, só que flutuando */
 .input-field .underline::before{
