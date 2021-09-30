@@ -5,8 +5,8 @@ const app = express();
 const morgan = require("morgan");
 
 // TODA ROTA NOVA DEVE SER INSERIDA AQUI
-const rotaProdutos = require("./routes/cadastro");
-const rotaPedidos = require("./routes/login");
+const rotaUsuario = require("./routes/usuario");
+const rotaIndex = require("./routes/index");
 
 // CRIA O AMBIENTE DE DESENVOLVIMENTO
 app.use(morgan("dev"));
@@ -32,8 +32,8 @@ app.use((req, res, next) => {
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-app.use("/produtos", rotaProdutos);
-app.use("/pedidos", rotaPedidos);
+app.use("/index", rotaIndex);
+app.use("/usuario", rotaUsuario);
 
 // QUANDO NÃO ENCONTRA ROTA DECLARADA
 app.use((req, res, next) => {
