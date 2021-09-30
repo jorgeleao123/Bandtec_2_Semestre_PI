@@ -5,8 +5,8 @@ const app = express();
 const morgan = require("morgan");
 
 // TODA ROTA NOVA DEVE SER INSERIDA AQUI
-const rotaUsuario = require("./routes/usuario");
-const rotaIndex = require("./routes/index");
+const rotaUsuario = require("../routes/usuario");
+const rotaIndex = require("../routes/index");
 
 // CRIA O AMBIENTE DE DESENVOLVIMENTO
 app.use(morgan("dev"));
