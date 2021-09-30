@@ -224,10 +224,6 @@ form input[type="submit"]:hover{
         display: none;
     }
 
-    /* .form-login{
-        margin: 20% auto;
-    } */
-
     nav.mobile-menu{
         display: block;
     }
@@ -240,8 +236,4 @@ form input[type="submit"]:hover{
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
-
-    
-
-  
 }
