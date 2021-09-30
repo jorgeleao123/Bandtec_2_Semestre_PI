@@ -19,7 +19,7 @@
 .divisao-form{
     height: 100%;
     width: 45%;
-    background-color: black;
+    /* background-color: black; */
     left: 0;
     top: 0;
     position: fixed;
@@ -40,6 +40,6 @@
     margin: 30% 60% 45% 70%;
     height: 40%;
     width: 30%;
-    background-color: aqua;
+    /* background-color: aqua; */
     position: fixed;
 }
