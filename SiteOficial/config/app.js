@@ -1,5 +1,4 @@
-
-  
+// PARTE FEITA PARA DECLARAR ALGUMA CONST NOVA
 const express = require("express");
 const app = express();
 const morgan = require("morgan");
@@ -9,7 +8,7 @@ const rotaUsuario = require("../routes/usuario");
 const rotaIndex = require("../routes/index");
 
 // CRIA O AMBIENTE DE DESENVOLVIMENTO
-app.use(morgan("dev"));
+app.use(logger('dev'));
 
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
@@ -37,9 +36,10 @@ app.use("/usuario", rotaUsuario);
 
 // QUANDO NÃO ENCONTRA ROTA DECLARADA
 app.use((req, res, next) => {
-  const erro = new Error("Não encontrado");
+  const erro = new Error("Rota não encontrado");
   erro.status = 404;
   next(erro);
+  console.error(ErroL43);
 });
 
 app.use((error, req, res, next) => {
