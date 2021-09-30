@@ -1,5 +1,5 @@
 ![Alt text](/SiteOficial/img/TotemHub.svg?raw=true "Logo")
-# TotemHub
+# Sobre
 Projeto referente ao 2º semestre do curso de Analise e Desenvolvimento de Sistemas
 
 # Faculdade :school:
@@ -20,7 +20,7 @@ $ npm install nodemon
 ```
 # Verificar console :warning:
 Caso erro em rotas: 
-![Alt text](/SiteOficial/img/CodeSnap.png?raw=true "Erro Console")
+![Alt text](/SiteOficial/img/codeSnap.png?raw=true "Erro Console")
 
 # Desenvolvedores :man_technologist:
 - Vitor Herculao 
