@@ -14,9 +14,9 @@ html, body{
     margin: 0 auto;
 }
 
-.clear{
-    /* clear: both; */
-}
+/* .clear{
+     clear: both; 
+} */
 
 .logo{
     width: 300px;
@@ -116,7 +116,7 @@ form .input-field:first-child{
     margin-bottom: 1.5rem;
     
 }
-<<<<<<< HEAD
+HEAD
 .sub_title{
     color: white;
     font-family: 'PoPPins', sans-serif;
@@ -134,7 +134,7 @@ form .input-field:first-child{
     margin-right: 380px;
     text-align: center;
     box-shadow: #ffc80281 5px 5px;   
-=======
+}
  
 /* o elemento ".underline" se refere a linha abaixo do ipt. O ipt permanece ali, só que flutuando */
 .input-field .underline::before{
@@ -202,8 +202,6 @@ form .input-field:first-child{
 
 .input-field{
     position: relative;
-    
->>>>>>> 8d3e4c3b01835ca53c3a8a66ec3f247b4e398646
 }
 
 
@@ -211,12 +209,9 @@ form .input-field:first-child{
 .input-field input{
     outline: none;
     border: none;
-<<<<<<< HEAD
-    border-bottom: 2px solid white;
+    /* border-bottom: 2px solid white; */
     background-color: var(--bck_login);
     color: white;
- 
-=======
     font-size: 0.9rem;
     background-color: rgba(240, 248, 255, 0);
     color: wheat;
@@ -224,8 +219,7 @@ form .input-field:first-child{
 
 .input-field input::placeholder{
     color: rgba(255, 255, 255, 0.5);
-    background-image: url(./img/o-email.png);
->>>>>>> 8d3e4c3b01835ca53c3a8a66ec3f247b4e398646
+    background-image: url(../img/o-email.png);
 }
 
 form input[type="submit"]{
@@ -270,7 +264,7 @@ form input[type="submit"]:hover{
         width: 200px;
         height: 50px;
         float: left;
-        background-image: url(./img/TotemHub.svg);
+        background-image: url(../img/TotemHub.svg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
