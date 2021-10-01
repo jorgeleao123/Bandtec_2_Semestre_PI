@@ -62,9 +62,7 @@ li {
     margin-top: 35px;
     margin-right: 380px;
     text-align: center;
-    box-shadow: #ffc80281 5px 5px;
-    
-    
+    box-shadow: #ffc80281 5px 5px;   
 }
 .placeholder {
     color: white;
@@ -84,9 +82,9 @@ li {
 .ipt{
     border: none;
     border-bottom: 2px solid white;
-    background-color:rgba(255, 255, 255, 0);
-    
+    background-color: var(--bck_login);
     color: white;
+ 
 }
 .ipt:focus, input:focus {
     border-color: #ffc702;

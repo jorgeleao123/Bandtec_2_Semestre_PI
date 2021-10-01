@@ -1,17 +1,18 @@
 body {
-    background-image: url(../img/watercolor-4116932.png);
+    background-image: url(../img/fundo_trem.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
     overflow: hidden;
+
 }
 
 .divisao1 {
     height: 100%;
     width: 38%;
-    background-color: white;
+    background-color:var(--bck_login);
     position: absolute;
-    border-top-right-radius: 15px;
+    
 }
 
 .divisao2 {
@@ -19,7 +20,6 @@ body {
     width: 30%;
     position: absolute;
     margin: 20% 0 0 38%;
-    background-color: white;
     border-top-right-radius: 15px;
 }
 
@@ -46,14 +46,14 @@ body {
    
 }
 
-.btn_mostrar_cadastrados {
+.btn_mostrar_cadastrados{
     margin: 0 auto;
     width: 50%;
     height: 160%;
-    border-radius: 5px;
-    border-color: #232323;
-    background-color: #232323;
-    color: white;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
     cursor: pointer;
 }
 
@@ -74,6 +74,7 @@ body {
     height: 83%;
     width: 98%;
     margin: 3% 1%;
+    background-color: var(--bck_login);
 }
 
 .form_cadastro_gerente h4 {
@@ -89,10 +90,16 @@ body {
     align-items: center;
     align-content: center;
 }
+.divisao2 {
+    background-color: var(--bck_login);
+}
+
 
 .divisao2 h2 {
     text-align: center;
-    margin: 1rem auto;
+     margin: 1rem auto;
+    background-color: var(--bck_login);
+    color: var(--yellow);
 }
 
 .inp_form {
@@ -101,6 +108,7 @@ body {
     margin: 0 auto;
     width: 90%;
     text-align: center;
+    height: 30px;
 }
 
 .btn_cadastrar_agente {
@@ -110,8 +118,9 @@ body {
     width: 65%;
     height: 8%;
     cursor: pointer;
-    background-color: #232323;
-    color: white;
+    background-color:var (--bck_login);
+    color: black;
+    font-weight: bold;
 }
 
 .btn_cadastrar_agente:hover {
@@ -126,6 +135,7 @@ body {
     border-radius: 5px;
     margin: 0 auto;
     width: 90%;
+    height: 30px;
 }
 
 ::placeholder {
@@ -144,6 +154,6 @@ body {
 }
 
 .form_cadastro_icones {
-    width: 35%;
+    width: 30%;
     margin-left: 2rem;
 }
