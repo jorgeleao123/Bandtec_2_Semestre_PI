@@ -5,40 +5,6 @@ var agente_de_estacao = require('../models').agente_de_estacao;
 
 let sessoes = [];
 
-/* Recuperar usuário por login e senha */
-router.post('/autenticar', function(req, res, next) {
-	console.log('Recuperando usuário por login e senha');
-
-	var login_agente = req.body.login_agente; // depois de .body, use o nome (name) do campo em seu formulário de login
-	var senha_agente = req.body.senha_agente; // depois de .body, use o nome (name) do campo em seu formulário de login	
-	
-	let instrucaoSql = `select * from agente_de_estacao 
-		where login_agente='${login_agente}' 
-		and senha_agente='${senha_agente}'`;					
-							
-	console.log(instrucaoSql);
-
-	sequelize.query(instrucaoSql, {
-		model: agente_de_estacao
-	}).then(resultado => {
-		console.log(`Encontrados: ${resultado.length}`);
-
-		if (resultado.length == 1) {
-			sessoes.push(resultado[0].dataValues.login_agente);
-			console.log('sessoes: ',sessoes);
-			res.json(resultado[0]);
-		} else if (resultado.length == 0) {
-			res.status(403).send('Login e/ou senha inválido(s)');
-		} else {
-			res.status(403).send('Mais de um usuário com o mesmo login e senha!');
-		}
-
-	}).catch(erro => {
-		console.error(erro);
-		res.status(500).send(erro.message);
-  	});
-});
-
 /* Cadastrar usuário */
 router.post('/cadastrar', function(req, res, next) {
 	console.log('Criando um usuário');
@@ -103,6 +69,37 @@ router.get('/', function(req, res, next) {
 		console.log(`${resultado.count} registros`);
 
 		res.json(resultado.rows);
+	}).catch(erro => {
+		console.error(erro);
+		res.status(500).send(erro.message);
+  	});
+});
+
+/* Recuperar usuário por login e senha */
+router.post('/autenticar', function(req, res, next) {
+	console.log('Recuperando usuário por login e senha');
+
+	var email_agente = req.body.email_agente; // depois de .body, use o nome (name) do campo em seu formulário de login
+	var senha_agente = req.body.senha_agente; // depois de .body, use o nome (name) do campo em seu formulário de login	
+	
+	let instrucaoSql = `select * from agente_de_estacao where email='${email_agente}' and senha='${senha_agente}'`;
+	console.log(instrucaoSql);
+
+	sequelize.query(instrucaoSql, {
+		model: Usuario
+	}).then(resultado => {
+		console.log(`Encontrados: ${resultado.length}`);
+
+		if (resultado.length == 1) {
+			sessoes.push(resultado[0].dataValues.login);
+			console.log('sessoes: ',sessoes);
+			res.json(resultado[0]);
+		} else if (resultado.length == 0) {
+			res.status(403).send('Email e/ou senha inválido(s)');
+		} else {
+			res.status(403).send('Mais de um usuário com o mesmo email e senha!');
+		}
+
 	}).catch(erro => {
 		console.error(erro);
 		res.status(500).send(erro.message);

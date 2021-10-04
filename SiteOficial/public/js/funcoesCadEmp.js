@@ -11,6 +11,6 @@ function cadastrarEmp(){
                 alert("Favor informar corretamente seu CNPJ");
             }
             else{
-                window.location.href ="login_empresa.html";
+                window.location.href ="login.html";
             }
 }

@@ -15,6 +15,6 @@ function cadastrar(){
                 alert("Usuario ou senha incorretas!");
             }
             else{
-                window.location.href ="login_agente.html";
+                window.location.href ="login.html";
             }
 }

@@ -1,5 +1,5 @@
 body {
-    background-image: url(../img/fundo_trem.jpeg);
+    background-image: url(../img/subway-1209419.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
@@ -8,19 +8,27 @@ body {
 }
 
 .divisao1 {
-    height: 100%;
-    width: 38%;
+    height: 102%;
+    width: 40%;
     background-color:var(--bck_login);
     position: absolute;
     
 }
 
 .divisao2 {
-    height: 60%;
-    width: 30%;
+    height: 100%;
+    width: 39.9%;
     position: absolute;
-    margin: 20% 0 0 38%;
+    margin: 280px 0 0 40%;
     border-top-right-radius: 15px;
+    background-color: var(--bck_login);
+}
+
+.divisao2 h2 {
+    text-align: center;
+    margin: 2rem auto 1rem;
+    background-color: var(--bck_login);
+    color: var(--yellow);
 }
 
 .div_logo {
@@ -34,7 +42,11 @@ body {
     height: 15%;
     width: 28%;
     float: right;
-    margin-top: 34%;
+    margin-top: 173px;
+}
+
+.gracinha img{
+    width: 100%;
 }
 
 .grid_tabela_cadastrados {
@@ -42,19 +54,21 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 14fr;
     position: relative;
-    margin-top: 56%;
+    margin-top: 320px;
    
 }
 
 .btn_mostrar_cadastrados{
     margin: 0 auto;
-    width: 50%;
-    height: 160%;
-    border-radius: 20px;
-    background-color: whitesmoke;
-    color: black;
+    width: 200px;
+    height: 28px;
     font-weight: bold;
     cursor: pointer;
+    background: linear-gradient(to left, #FFC702, rgb(174, 174, 15));
+    border-radius: 10px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: none;
 }
 
 .btn_mostrar_cadastrados:hover {
@@ -63,17 +77,8 @@ body {
     transition: 100ms ease;
 }
 
-.tabela_cadastrados {
-    position: absolute;
-    height: 100px;
-    width: 500px;
-    background-color: black;
-}
-
 .form_cadastro_gerente {
-    height: 83%;
-    width: 98%;
-    margin: 3% 1%;
+    margin: 45px 0;
     background-color: var(--bck_login);
 }
 
@@ -90,17 +95,6 @@ body {
     align-items: center;
     align-content: center;
 }
-.divisao2 {
-    background-color: var(--bck_login);
-}
-
-
-.divisao2 h2 {
-    text-align: center;
-     margin: 1rem auto;
-    background-color: var(--bck_login);
-    color: var(--yellow);
-}
 
 .inp_form {
     border-radius: 5px;
@@ -111,16 +105,22 @@ body {
     height: 30px;
 }
 
+.div_cadastrar{
+    width: min-content;
+    height: min-content;
+    margin: 15px auto;
+}
+
 .btn_cadastrar_agente {
-    border-radius: 5px;
-    border-color: #232323;
-    margin: 2rem 5rem;
-    width: 65%;
-    height: 8%;
+    width: 200px;
+    height: 28px;
     cursor: pointer;
-    background-color:var (--bck_login);
-    color: black;
     font-weight: bold;
+    background: linear-gradient(to left, #FFC702, rgb(174, 174, 15));
+    border-radius: 10px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: none;
 }
 
 .btn_cadastrar_agente:hover {
@@ -145,8 +145,9 @@ body {
 .tabela_cadastrados {
     background-color: black;
     width: 60%;
-    margin: 30px auto;
-    height: 100%;
+    margin: 8px auto;
+    height: 60%;
+    border-radius: 5px;
 }
 
 .tabela_escondida {
@@ -156,4 +157,8 @@ body {
 .form_cadastro_icones {
     width: 30%;
     margin-left: 2rem;
+}
+
+@media screen and (max-width: 1018px) {
+    
 }
