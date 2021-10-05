@@ -10,9 +10,9 @@ router.post('/cadastrar', function(req, res, next) {
 	console.log('Criando um usuário');
 	
 	agente_de_estacao.create({
-		nome_agente : req.body.nome_agente,
-		email_agente : req.body.email_agente,
-		senha_agente: req.body.senha_agente,		// feito
+		// nome_agente : req.body.nome_agente,
+		email_agente : req.body.login,
+		senha_agente: req.body.senha,		// feito
 	}).then(resultado => {
 		console.log(`Registro criado: ${resultado}`)
         res.send(resultado);
@@ -25,14 +25,16 @@ router.post('/cadastrar', function(req, res, next) {
 
 /* Verificação de usuário */
 router.get('/sessao/:login', function(req, res, next) {
-	let login_agente = req.params.login_agente;
+	let login_agente = req.params.login;
+	console.log("agente:", login_agente);
 	console.log(`Verificando se o usuário ${login_agente} tem sessão`);
 	
 	let tem_sessao = false;
 	for (let u=0; u<sessoes.length; u++) {
 		if (sessoes[u] == login_agente) {
 			tem_sessao = true;
-			break;
+			res.status(500).send(erro.message);
+			break; 
 		}
 	}
 
@@ -79,14 +81,16 @@ router.get('/', function(req, res, next) {
 router.post('/autenticar', function(req, res, next) {
 	console.log('Recuperando usuário por login e senha');
 
-	var email_agente = req.body.email_agente; // depois de .body, use o nome (name) do campo em seu formulário de login
-	var senha_agente = req.body.senha_agente; // depois de .body, use o nome (name) do campo em seu formulário de login	
+	var email_agente = req.body.login; // depois de .body, use o nome (name) do campo em seu formulário de login
+	var senha_agente = req.body.senha; // depois de .body, use o nome (name) do campo em seu formulário de login	
 	
-	let instrucaoSql = `select * from agente_de_estacao where email='${email_agente}' and senha='${senha_agente}'`;
+	let instrucaoSql = `select * from agente_de_estacao 
+							where login_agente='${email_agente}' 
+							and senha_agente='${senha_agente}'`;
 	console.log(instrucaoSql);
 
 	sequelize.query(instrucaoSql, {
-		model: Usuario
+		model: agente_de_estacao
 	}).then(resultado => {
 		console.log(`Encontrados: ${resultado.length}`);
 

@@ -113,28 +113,29 @@
         return false;
     }
 
-    function redirecionar_login() {
-        window.location.href = 'login.html';
-    }
+    // function redirecionar_login() {
+    //     window.location.href = 'login.html';
+    // }
 
     function verificar_autenticacao() {
-        login_usuario = sessionStorage.login_usuario_meuapp;
-        nome_usuario = sessionStorage.nome_usuario_meuapp;
+        login = sessionStorage.login_usuario_meuapp;
+        nome = sessionStorage.nome_usuario_meuapp;
 
-        if (login_usuario == undefined) {
+        if (login == undefined) {
             redirecionar_login();
         } else {
             b_usuario.innerHTML = nome_usuario;
+            console.log("nome usuário:",b_usuario.innerHTML);
             validar_sessao();
         }
 
     }
 
-    function logoff() {
-        finalizar_sessao();
-        sessionStorage.clear();
-        redirecionar_login();
-    }
+    // function logoff() {
+    //     finalizar_sessao();
+    //     sessionStorage.clear();
+    //     redirecionar_login();
+    // }
 
     function validar_sessao() {
         fetch(`/usuarios/sessao/${login_usuario}`, { cache: 'no-store' })
@@ -150,9 +151,9 @@
             });
     }
 
-    function finalizar_sessao() {
-        fetch(`/usuarios/sair/${login_usuario}`, { cache: 'no-store' });
-    }
+    // function finalizar_sessao() {
+    //     fetch(`/usuarios/sair/${login_usuario}`, { cache: 'no-store' });
+    // }
 
 
 </script>
