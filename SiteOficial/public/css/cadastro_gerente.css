@@ -148,8 +148,13 @@ body {
     margin: 8px auto;
     height: 60%;
     border-radius: 5px;
+    overflow-y: scroll;
+    
 }
-
+::-webkit-scrollbar{
+    background: linear-gradient(white,#FFC702
+    );
+}
 .tabela_escondida {
     display: transparent;
 }
