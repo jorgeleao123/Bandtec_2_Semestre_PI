@@ -179,7 +179,31 @@ ul li{
     }
 }
 
+.clear {
+    clear: both;
+}
 
+@media screen and (max-width: 1050px) {
+
+    section .div-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 300px);
+        row-gap: 60px;
+        margin-top: 35px;
+    }
+
+    .icons {
+        display: block !important;
+        margin: 0 auto !important;
+        width: 50px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .queue .bg-queue {
+        height: 400px !important;
+    }
+
+}
 
 /* Second Page */
 .about-us{ 
@@ -190,7 +214,7 @@ ul li{
 section .div-grid{
     display: flex;
     justify-content: center;
-    width: 100%; 
+    /* width: 100%;  */
 }
 
 section .div-grid .icons{
@@ -223,7 +247,7 @@ section .div-grid .icons{
 
 .queue .bg-queue{
     background-image: url(../img/queue.svg);
-    height: 55rem;
+    height: 500px;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;   
