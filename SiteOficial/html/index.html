@@ -20,6 +20,11 @@
 <body>
     <section class="bg-img">
         <div class="container">
+
+            <div class="logo-mobile">
+                <img class="logo-mobile-size" src="../../projeto-login-responsivo/img/TotemHub.svg" alt="Logo da TotemHub">
+            </div>
+
             <header>
                 <nav class="nav-bar">
                     <ul>
@@ -30,47 +35,58 @@
                         <li class="nav-bar-item"> <a href="login_empresa.html">login</a></li>
                     </ul>
                 </nav>
+
+                <nav class="mobile-menu">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Cadastrar</a></li>
+                        <li><a href="">Login</a></li>
+                    </ul>
+                </nav>
                 <!--nav-bar-->
             </header>
+        </div>
 
+        <div class="container">
             <div class="logo">
                 <img class="logo-home" src="../img/logo-home.svg">
             </div>
 
-            <div class="slogan">
-                Improving your <br>
-                <span class="exp">experience</span>
+            <div class="mobile-slogan">
+                <div class="slogan">
+                    Improving your <br>
+                    <span class="exp">experience</span>
+                </div>
             </div>
-
         </div>
         <!--container-->
     </section>
     <!--bg-img-->
 
     <section id="servico" class="about-us">
-        <div class="div-grid">
-            <div>
+        <div class="div-grid grid-template-columns">
+            <div class="div-items">
                 <img class="icons" src="../img/settings-icon.png" alt="">
 
                 <h3>Trabalho</h3>
 
                 <p>Empresa que trabalha para poder alinhar os negócios com as expectativas do cliente.</p>
             </div>
-            <div>
+            <div class="div-items">
                 <img class="icons" src="../img/user.png" alt="">
 
                 <h3>Perfil</h3>
 
                 <p>Um perfil para cada monitor poder fazer os acompanhamentos de tela.</p>
             </div>
-            <div>
+            <div class="div-items">
                 <img class="icons" src="../img/warning.png" alt="">
 
                 <h3>Alerta</h3>
 
                 <p>Recebimento de alertas toda vez que o totem estiver com intabilidade por desempenho.</p>
             </div>
-            <div>
+            <div class="div-items">
                 <img class="icons" src="../img/dashboard.png" alt="">
 
                 <h3>Dashboard</h3>
@@ -94,7 +110,7 @@
                 </p>
             </div>
         </div>
-        <div id="sobre" ></div>
+        <div id="sobre"></div>
     </section>
 
     <section class="just-about">
@@ -111,19 +127,20 @@
                 TotemHub é uma StartUp voltada a inovar a utilização dos transportes públicos,
                 mais precisamente estações de trêm e metrô do Brasil e futuramente do mundo. Nossa equipe é formada
                 por potenciais profissionais que tem como intuito transformar o futuro da tecnologia através da
-                <b><a href="#abrirModal1" class="openmod"> 
-                    experimentação e inovação
-                </a></b> 
-                em todos os âmbitos da sociedade, em prol de facilitar a visualização dos totens das estações por meio de 
+                <b><a href="#abrirModal1" class="openmod">
+                        experimentação e inovação
+                    </a></b>
+                em todos os âmbitos da sociedade, em prol de facilitar a visualização dos totens das estações por meio
+                de
                 <b><a href="#abrirModal2" class="openmod">
-                    dashboards e notificações
-                </a></b> 
+                        dashboards e notificações
+                    </a></b>
                 enviadas diretamente ao responsável pela organização e sustentação dos mesmos.
             </div>
 
 
         </div>
-        
+
         <div id="abrirModal1" class="modal">
 
             <!-- conteúdo do modal aqui -->
@@ -161,26 +178,30 @@
                         <p>Scrum Master</p>
                     </div>
                 </div>
-                
+
                 <!-- x para fechar o modal e referenciado como # para ser "alvo" no target -->
                 <a href="#fechar" title="Fechar" class="fechar">x</a>
             </div>
         </div>
-        
+
         <div id="abrirModal2" class="modal">
             <div class="background-modal">
                 <h1>Monitore o funcionamento dos seus totens na palma da sua mão</h1>
                 <div class="grid-exemplares">
-                    <img class="img-exemplares" src="https://media.discordapp.net/attachments/875134794483245119/884839543004622909/Group_136.png?width=642&height=427" alt="">
-                    <img class="img-exemplares2" src="https://media.discordapp.net/attachments/875134794483245119/884839494879166535/Group_135.png" alt="">
+                    <img class="img-exemplares"
+                        src="https://media.discordapp.net/attachments/875134794483245119/884839543004622909/Group_136.png?width=642&height=427"
+                        alt="">
+                    <img class="img-exemplares2"
+                        src="https://media.discordapp.net/attachments/875134794483245119/884839494879166535/Group_135.png"
+                        alt="">
                 </div>
-                
+
                 <a href="#fechar" title="fechar" class="fechar">x</a>
             </div>
         </div>
     </section>
 
-    
+
 
     <section id="contato" class="contato">
 
