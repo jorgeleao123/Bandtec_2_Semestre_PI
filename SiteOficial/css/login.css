@@ -85,6 +85,7 @@ li {
     border: none;
     border-bottom: 2px solid white;
     background-color:rgba(255, 255, 255, 0);
+    outline: none;
     
     color: white;
 }
@@ -93,6 +94,7 @@ li {
       transition: ease-out 0.20s;
   } 
 #button_login{
+
     margin-left: 40px;
     height: 45px;
     width: 180px;
@@ -110,4 +112,10 @@ li {
 }
 #button_login:hover{
     box-shadow: inset 180px 0 0 0 #ffc702 ;
+}
+
+@media screen and (max-width: 812px){
+    .login_text{
+        display: inline-block;
+    }
 }
