@@ -26,7 +26,7 @@ module.exports = {
   dev: {
     // altere APENAS username, password e database.
     username: 'root',
-    password: 'jotalion02',
+    password: 'Sotrabalho17',
     database: 'sprintTotemHub',
     host: '127.0.0.1',
     dialect: 'mysql',

@@ -10,9 +10,9 @@ router.post('/cadastrar', function(req, res, next) {
 	console.log('Criando um usuário');
 	
 	agente_de_estacao.create({
-		// nome_agente : req.body.nome_agente,
-		email_agente : req.body.login,
-		senha_agente: req.body.senha,		// feito
+		nome_agente : req.body.nome,
+		login_agente : req.body.email,
+		senha_agente: req.body.senha,
 	}).then(resultado => {
 		console.log(`Registro criado: ${resultado}`)
         res.send(resultado);
