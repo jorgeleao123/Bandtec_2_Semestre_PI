@@ -22,10 +22,9 @@ router.post('/cadastrar', function(req, res, next) {
   	});
 });
 
-
 /* Verificação de usuário */
 router.get('/sessao/:login', function(req, res, next) {
-	let login_agente = req.params.login;
+	let login_agente = req.params.login_agente;
 	console.log("agente:", login_agente);
 	console.log(`Verificando se o usuário ${login_agente} tem sessão`);
 	
@@ -51,8 +50,8 @@ router.get('/sessao/:login', function(req, res, next) {
 
 /* Logoff de usuário */
 router.get('/sair/:login', function(req, res, next) {
-	let login_agente = req.params.login_agente;
-	console.log(`Finalizando a sessão do usuário ${login_agente}`);
+	let logoff_agente = req.params.login_agente;
+	console.log(`Finalizando a sessão do usuário ${logoff_agente}`);
 	let nova_sessoes = []
 	for (let u=0; u<sessoes.length; u++) {
 		if (sessoes[u] != login_agente) {
@@ -60,7 +59,7 @@ router.get('/sair/:login', function(req, res, next) {
 		}
 	}
 	sessoes = nova_sessoes;
-	res.send(`Sessão do usuário ${login_agente} finalizada com sucesso!`);
+	res.send(`Sessão do usuário ${logoff_agente} finalizada com sucesso!`);
 });
 
 
@@ -83,10 +82,12 @@ router.post('/autenticar', function(req, res, next) {
 
 	var email_agente = req.body.login; // depois de .body, use o nome (name) do campo em seu formulário de login
 	var senha_agente = req.body.senha; // depois de .body, use o nome (name) do campo em seu formulário de login	
-	
+	var usuario_agente = req.body.nome;
+
 	let instrucaoSql = `select * from agente_de_estacao 
-							where login_agente='${email_agente}' 
-							and senha_agente='${senha_agente}'`;
+							where login_agente= '${email_agente}'
+							and senha_agente= '${senha_agente}'
+							and nome_agente= '${usuario_agente}'`;
 	console.log(instrucaoSql);
 
 	sequelize.query(instrucaoSql, {
@@ -95,9 +96,8 @@ router.post('/autenticar', function(req, res, next) {
 		console.log(`Encontrados: ${resultado.length}`);
 
 		if (resultado.length == 1) {
-			sessoes.push(resultado[0].dataValues.login);
-			console.log('sessoes: ',sessoes);
-			res.json(resultado[0]);
+			console.log(`Usuario: ${usuario_agente}`);
+
 		} else if (resultado.length == 0) {
 			res.status(403).send('Email e/ou senha inválido(s)');
 		} else {
