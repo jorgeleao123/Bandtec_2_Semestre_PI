@@ -1,0 +1,43 @@
+  
+git init (criar repositório)
+
+git status (mostra status)
+
+git add NomeDoArquivo (adiciona arquivo ao tracking e stage area)
+git add *.extensão (mesma coisa só q pra todos aquivos na pasta que possuem a extensão)
+git add . (mesma coisa só q pra tudo q tá na pasta do projeto)
+
+git commit (faz commit dos arquivos após o comando git add)
+git commit -a -m "SeuComentárioAqui" (faz um commit mesmo sem o comando git add)
+git commit -amend -m "SeuComentárioAqui" (esse aqui, pensa q tu deu um commit, mas daí lembrou q tinha q ter adicionado outra funcionalidade q já tava pronta e vc não quer criar mais um commit no histórico por conta de uma pequena alteração. esse comando permite vc editar o último commit feito)
+
+git diff (vê a diferença entre os arquivos alterados no work space e arquivos commitados)
+git diff --staged (mesma coisa do git diff porém pra stage area)
+
+git log (histórico dos commits)
+git log -p (mesma coisa do git log só q mostra em ordem cronológica e o diff junto. ah esse aqui tem q apertar a letra Q depois de ver tudo que quis pra poder sair do log)
+git log -p -númerodecommitsquequerpuxar (mesma coisa do git log -p, só q limita a quantidade de commits que vão aparecer no bash. bom pra controlar a quantidade de informação q vc quer q venha pra não ter bagunça)
+git log --pretty=oneline (mesma coisa só q mostra apenas a chave do commit e a msg)
+gitk (sim, o comando é gitk mesmo, tudo junto. ele abre o visualizador de relatórios. é tipo um git log -p só que com uma interface gráfica pra analisar alteração de código de maneira decente já q fazer isso no bash em grande escala seria um pesadelo)
+
+git reset NomeDoArquivo (aqui é pra vc der um git add em um arquivo que não queria que fosse pra stage area e quer remover de lá)
+
+git checkout -- NomeDoArquivo (é pra quando vc tem um arquivo commitado, vc pega o arquivo da pasta abre e começa a alterar e lembra que não pode alterar ou quer voltar ao estado original)
+
+git rm NomeDoArquivo (remove arquivo do repositório)
+
+git tag -a NomeDaTag -m "SeuComentárioAqui" (cria uma tag no commit atual)
+git tag -a NomeDaTag ChaveDoCommit (cria uma tag e associa a um commit anterior pela chave)
+git tag (mostra todas as tags existentes)
+git checkout NomeDaTag (muda entre tags)
+git tag -d NomeDaTag (deleta uma tag)
+git checkout master (volta pra branch master)
+
+git branch NomeDoBranch (cria uma cópia da branch master)
+git checkout NomeDoBranch (troca pra trabalhar no branch escolhido)
+git branch -D NomeDoBranch (deleta o branch)
+git checkout -b (cria um branch e já muda pra ele)
+git branch (mostra uma lista dos branches existentes)
+git merge NomeDoBranch (trás as alterações feitas para o branch master)
+git clone Chave NomeDaPasta(clona um repositório)
+git push origin master (envia pro github)
