@@ -19,22 +19,22 @@
 
     <header>
 
-        <div class="container">
+       
             <div class="logo">
                 <!-- <img src="img/TotemHub.svg" alt=""> -->
             </div><!--logo-->
             <nav class="desktop-menu">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a style="color: #FFC702;"href="">Cadastrar</a></li>
-                    <li><a >Login</a></li>
+                    <li><a href="cadastro.html">Cadastrar</a></li>
+                    <li><a style="color: #FFC702;"href="">Tabela de Funcionários</a></li>
+                    <li><a >Logout</a></li>
                 </ul>
             </nav>
 
             <nav class="mobile-menu">
                 <ul>
                     <li><a href="">Home</a></li>
-                    <li><a href="">Cadastrar</a></li>
+                    <li><a href="">Tae</a></li>
                     <li><a href="">Login</a></li>
                 </ul>
             </nav>
@@ -64,10 +64,10 @@
 								<label for="selectAll"></label>
 							</span>
 						</th>
-						<th>Name</th>
+						<th>Nome</th>
 						<th>Email</th>
-						<th>Address</th>
-						<th>Phone</th>
+						<th>Estação</th>
+						<th>Status</th>
 						<th>Actions</th>
 					</tr>
 				</thead>
@@ -82,7 +82,7 @@
 						<td>Thomas Hardy</td>
 						<td>thomashardy@mail.com</td>
 						<td>89 Chiaroscuro Rd, Portland, USA</td>
-						<td>(171) 555-2222</td>
+						<td><img src="../img/on.png" style="width: 20px;"></td>
 						<td>
 							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
 							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
@@ -98,7 +98,7 @@
 						<td>Dominique Perrier</td>
 						<td>dominiqueperrier@mail.com</td>
 						<td>Obere Str. 57, Berlin, Germany</td>
-						<td>(313) 555-5735</td>
+						<td><img src="../img/off.png" style="width: 20px;"></td>
 						<td>
 							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
 							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
@@ -114,7 +114,7 @@
 						<td>Maria Anders</td>
 						<td>mariaanders@mail.com</td>
 						<td>25, rue Lauriston, Paris, France</td>
-						<td>(503) 555-9931</td>
+						<td><img src="../img/off.png" style="width: 20px;"></td>
 						<td>
 							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
 							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
@@ -130,7 +130,7 @@
 						<td>Fran Wilson</td>
 						<td>franwilson@mail.com</td>
 						<td>C/ Araquil, 67, Madrid, Spain</td>
-						<td>(204) 619-5731</td>
+						<td><img src="../img/on.png" style="width: 20px;"></td>
 						<td>
 							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
 							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
@@ -146,7 +146,7 @@
 						<td>Martin Blank</td>
 						<td>martinblank@mail.com</td>
 						<td>Via Monte Bianco 34, Turin, Italy</td>
-						<td>(480) 631-2097</td>
+						<td><img src="../img/on.png" style="width: 20px;"></td>
 						<td>
 							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
 							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
@@ -154,7 +154,7 @@
 					</tr> 
 				</tbody>
 			</table>
-			<div class="clearfix">
+			<!-- <div class="clearfix">
 				<div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
 				<ul class="pagination">
 					<li class="page-item disabled"><a href="#">Previous</a></li>
@@ -165,7 +165,7 @@
 					<li class="page-item"><a href="#" class="page-link">5</a></li>
 					<li class="page-item"><a href="#" class="page-link">Next</a></li>
 				</ul>
-			</div>
+			</div> -->
 		</div>
 	</div>        
 </div>
@@ -188,13 +188,13 @@
 						<input type="email" class="form-control" required>
 					</div>
 					<div class="form-group">
-						<label>Address</label>
+						<label>Estação</label>
 						<textarea class="form-control" required></textarea>
 					</div>
-					<div class="form-group">
-						<label>Phone</label>
+					<!-- <div class="form-group">
+						<label>Status</label>
 						<input type="text" class="form-control" required>
-					</div>					
+					</div>					 -->
 				</div>
 				<div class="modal-footer">
 					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
