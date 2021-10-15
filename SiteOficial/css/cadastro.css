@@ -44,6 +44,7 @@ header nav{
 
 header nav.desktop-menu ul{
     list-style-type: none;
+    margin-top: 5px;
 }
 
 nav.mobile-menu{
