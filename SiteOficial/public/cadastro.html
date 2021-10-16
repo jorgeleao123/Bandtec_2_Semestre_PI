@@ -38,7 +38,7 @@
 
         <div class="form-login">
             <h2>Cadastro</h2>
-            <form action="" d="form_cadastro" method="post" onsubmit="return cadastrar()">
+            <form  id="form_cadastro" method="post">
                 <div class="input-field">
                     <input type="text" name="nome" id="nome" placeholder="Nome completo">
                     <img src="../img/user_icon.png" alt="" aria-hidden="true" style="width: 7%; float: left;">
@@ -46,7 +46,7 @@
                 </div>
 
                 <div class="input-field">
-                    <input type="text" name="estacao" id="username" placeholder="Estação ">
+                    <input type="text" name="estacao" id="estacao" placeholder="Estação ">
                     <img src="../img/localizacao.png" alt="" aria-hidden="true" style="width: 7%; float: left;">
                     <div class="underline"></div>
                 </div>
@@ -63,7 +63,9 @@
                     <div class="underline"></div>
                 </div>
 
-                <input type="submit" value="Cadastrar funcionário" id="btn_cadastrar" class="btn_cadastrar_agente">
+
+                <button onclick="return cadastrar()"  method="POST" class="btn_cadastrar_agente">Registrar</button>
+
             </form>
         </div>
 
@@ -72,4 +74,38 @@
     
 </body>
 </html>
+
+<script>
+
+
+function cadastrar() {
+   
+       alert("teste")
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+            
+        }).then(function (response) {
+            alert('ok')
+            
+            if (response.ok) {
+                
+                alert("foi")
+
+            } else {
+
+                alert('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    div_erro.innerHTML = resposta;
+                });
+                finalizar_aguardar();
+            }
+        });
+
+        return false;
+    }
+
+</script>
 
