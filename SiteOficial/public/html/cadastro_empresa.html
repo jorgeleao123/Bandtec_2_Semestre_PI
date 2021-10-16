@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/cadastro_user.css">
+    <script type="text/javascript" src="../js/funcoesCadEmp.js"></script>
+    <title>TotemHub | Cadastro</title>
+</head>
+
+<body>
+
+    <div class="fundo_login">
+
+        <div class="caixa">
+            <span>
+                <a href=""><img src="../img/TotemHub.svg" alt="Logo" style="width: 300px; height: 150px;"></a>
+            </span>
+            <nav>
+                <ul class="nav_header">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="login_empresa.html">LOGIN</a></li>
+                    <li><a style="color:#FFC702;" href="page_CadastroUser.html">CADASTRO</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    <div class="sub_title_cad">
+        <a>Seja bem vindo à <a style="color:#FFC702;">TotemHub</a>!</a><br>
+        <a>Abaixo faça seu Cadastro</a>
+    </div>
+    <div class="cad_text_empresa">
+
+        <form id="form_cad" method="post" onsubmit="">
+
+            <!-- <label class="custom-field one"> -->
+                <span class="placeholder"><img src="../img/cnpj-icon.svg" alt="CNPJ"
+                    style="width: 50px; height: 25px;">Empresa: </span>
+            <input id="nomeEmp" class="ipt" name="nome_empresa" type="text" placeholder="" onkeyup="" />
+
+            <!-- </label> -->
+            
+            <!-- <label class="custom-field one"> -->
+                <span class="placeholder"><img src="../img/cnpj-icon.svg" alt="CNPJ"
+                    style="width: 50px; height: 25px;">CNPJ: </span>
+                <input id="cnpjEmp" class="ipt" name="senha" type="number" placeholder="" onkeyup="" />
+            <!-- </label> -->
+            
+            <!-- <label class="custom-field one"> -->
+                <span class="placeholder"><img src="../img/padlock-icon.svg" alt="CNPJ"
+                    style="width: 50px; height: 25px;">Senha: </span>
+                <input id="senhaEmp" class="ipt" name="senha" type="text" placeholder="" onkeyup="" />
+            <!-- </label> -->
+        
+        </form>
+
+        <button onclick="cadastrarEmp()" id="cadastrar" type="submit">Cadastrar</button>
+
+    </div>
+
+</body>
+
+</html>

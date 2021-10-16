@@ -1,5 +1,5 @@
 * {
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
     padding: 0;
     border: 0;
     margin: 0;
@@ -42,6 +42,7 @@ li:hover{
     background-image: url("../img/bg-metro-home.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 99vw;
     height: 90vh;
 }
@@ -49,6 +50,16 @@ li:hover{
 section .container{
     width: 90vw;
     margin: 0 auto;
+}
+
+.logo-mobile {
+    display: none;
+    float: left;
+}
+
+.logo-mobile-size {
+    width: 180px;
+    padding-top: 35px;
 }
 
 section .container .nav-bar{
@@ -61,7 +72,73 @@ section .container .nav-bar{
     float: right;
 }
 
-section .container .nav-bar-item:nth-child(2),
+nav.mobile-menu{
+    float: right;
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url(../../projeto-login-responsivo/img/menu.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+    margin-top: 35px;
+}
+
+nav.mobile-menu ul{
+    display: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 75px;
+    list-style: none;
+    text-align: center;
+    border: none;
+}
+
+
+
+nav.mobile-menu ul li{
+    border-bottom: 0.5px solid black;
+    transition: 0.4s;
+    padding: 8px 0; 
+    
+}
+
+nav.mobile-menu ul li:hover{
+    background-color: #ffc802bb;
+}
+
+nav.mobile-menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+header nav{
+    float: right;
+}
+
+header nav.nav-bar ul{
+    list-style-type: none;
+}
+
+header nav.nav-bar li{
+    float: left;
+     margin: 15px 20px;
+     
+ 
+}
+
+header nav.nav-bar ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+header nav.nav-bar ul li a:hover{
+    color: #FFC702;
+    transition: 1s ease;
+}
+
+/* section .container .nav-bar-item:nth-child(2),
 section .container .nav-bar-item:nth-child(3),
 section .container .nav-bar-item:nth-child(4),
 section .container .nav-bar-item:nth-child(5){
@@ -74,14 +151,14 @@ section .container .nav-bar-item:first-child{
 
 ul li{
     display: inline;
-}
+} */
 
-section .container .logo-home{
+.logo-home{
     width: 28rem;
     margin-top: 20rem;
 }
 
-section .container .slogan{
+.slogan{
     float: right;
     font-size: 4.2rem;
     font-weight: 200;
@@ -89,22 +166,118 @@ section .container .slogan{
     line-height: 4.4rem;
 }
 
-section .container .exp{
+.exp{
     font-weight: 600;
     color: var(--white);
     font-size: 5.6rem;
 }
 
+/* Tablet Responsivity */
+@media screen and (max-width: 1010px) {
+    .bg-img {
+        height: 450px;
+    }
+
+    .logo-mobile {
+        display: block;
+        width: 80px;
+        /* background-size: 100% 100%; */
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    nav.mobile-menu{
+        display: block;
+    }
+
+    .logo-home {
+        display: none;
+    }
+
+    .slogan {
+        float: none;
+    }
+
+    .mobile-slogan {
+        padding-top: 180px;
+        text-align: center;
+    }
+}
+
+
+
+.clear {
+    clear: both;
+}
+
+@media screen and (max-width: 1050px) {
+
+    section .div-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 300px);
+        row-gap: 60px;
+        margin-top: 35px;
+    }
+
+    .icons {
+        display: block !important;
+        margin: 0 auto !important;
+        width: 50px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .queue .bg-queue {
+        height: 400px !important;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 650px){
+    section .div-grid {
+        display: grid !important;
+        grid-template-columns: repeat(1, 300px);
+        row-gap: 60px;
+        margin-top: 35px;
+    }
+
+    .icons {
+        display: block !important;
+        margin: 0 auto !important;
+        width: 60px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .about-us{ 
+        height: 850px !important;
+        overflow: hidden;
+    }
+
+    .page-container p{
+        font-size: 30px !important ;
+    }
+
+    .page-container p:nth-child(2){
+        font-size: 20px !important ;
+    }
+
+    
+
+
+}
+
 /* Second Page */
 .about-us{ 
-    height: 500px;
+    height: 550px;
     overflow-x: hidden;
 }
 
 section .div-grid{
     display: flex;
     justify-content: center;
-    width: 100%; 
+    /* width: 100%;  */
 }
 
 section .div-grid .icons{
@@ -137,7 +310,7 @@ section .div-grid .icons{
 
 .queue .bg-queue{
     background-image: url(../img/queue.svg);
-    height: 55rem;
+    height: 500px;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;   
