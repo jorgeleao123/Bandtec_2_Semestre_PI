@@ -13,7 +13,10 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="../css/tabela.css">
 <script src="../jquery/jquery.js"></script>
-    <script src="../jquery/menu-responsivo.js"></script>
+<script src="../jquery/menu-responsivo.js"></script>
+<script type="text/javascript" src="funcoes.js"></script>
+
+
 </head>
 <body>
 
@@ -292,4 +295,24 @@
             }
         });
     });
+
+	function atualizarFeed(consultas) {
+        var feed = document.getElementById("feed_container");
+        feed.innerHTML = "";
+        for (let contador = 0; contador < consultas.length; contador++) {
+            var consulta = consultas[contador];
+            
+            var divConsulta = document.createElement("div")
+            var divNome = document.createElement("div")
+
+            divNome.innerHTML = `Voce tem uma viagem em consultoria para ${consulta.destino}.`;
+            divConsulta.appendChild(divNome);
+
+            feed.appendChild(divConsulta);
+
+        }
+    }
+
+
+
     </script>

@@ -1,18 +1,4 @@
 {
-<<<<<<< HEAD
-  "name": "SiteOficial",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bootstrap": "^3.4.1"
-=======
   "name": "pi-ads-2020-2",
   "version": "1.0.0",
   "private": true,
@@ -22,14 +8,13 @@
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
-    "express": "^4.16.4",
-    "http-errors": "~1.6.3",
-    "morgan": "~1.9.1",
+    "express": "~4.16.1",
     "mssql": "^6.2.0",
     "mysql": "^2.18.1",
     "mysql2": "^2.2.5",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
     "sequelize": "^5.21.2",
     "tedious": "^6.6.0"
->>>>>>> Branch_Flavio
   }
 }

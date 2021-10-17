@@ -63,8 +63,8 @@
                     <img src="../img/senha_icon.png" alt="" aria-hidden="true" style="width: 7%; float: left;">
                     <div class="underline"></div>
                 </div>
-
-                <input type="submit" value="Cadastrar">
+                <button onclick="return cadastrar()"  method="POST" class="btn_cadastrar_agente">Registrar</button>
+                
             </form>
         </div>
 
@@ -74,3 +74,36 @@
 </body>
 </html>
 
+<script>
+
+
+    function cadastrar() {
+    
+           alert("teste")
+            var formulario = new URLSearchParams(new FormData(form_cadastro));
+    
+            fetch("/usuarios/cadastrar", {
+                method: "POST",
+                body: formulario
+    
+            }).then(function (response) {
+                alert('ok')
+    
+                if (response.ok) {
+    
+                    alert("foi")
+    
+                } else {
+    
+                    alert('Erro de cadastro!');
+                    response.text().then(function (resposta) {
+                        div_erro.innerHTML = resposta;
+                    });
+                    finalizar_aguardar();
+                }
+            });
+    
+            return false;
+        }
+    
+    </script>
