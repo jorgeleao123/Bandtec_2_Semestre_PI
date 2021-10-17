@@ -83,12 +83,10 @@ router.post('/autenticar', function(req, res, next) {
 
 	var email_agente = req.body.login; // depois de .body, use o nome (name) do campo em seu formulário de login
 	var senha_agente = req.body.senha; // depois de .body, use o nome (name) do campo em seu formulário de login	
-	var usuario_agente = req.body.nome;
 
 	let instrucaoSql = `select * from agente_de_estacao 
 							where login_agente= '${email_agente}'
-							and senha_agente= '${senha_agente}'
-							and nome_agente= '${usuario_agente}'`;
+							and senha_agente= '${senha_agente}'`;
 	console.log(instrucaoSql);
 
 	sequelize.query(instrucaoSql, {
@@ -97,7 +95,7 @@ router.post('/autenticar', function(req, res, next) {
 		console.log(`Encontrados: ${resultado.length}`);
 
 		if (resultado.length == 1) {
-			console.log(`Usuario: ${usuario_agente}`);
+			console.log("Login Efetuado");
 
 		} else if (resultado.length == 0) {
 			res.status(403).send('Email e/ou senha inválido(s)');
