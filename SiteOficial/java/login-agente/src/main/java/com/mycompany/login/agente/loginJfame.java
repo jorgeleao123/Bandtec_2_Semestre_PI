@@ -247,6 +247,7 @@ public class loginJfame extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Senha e/ou e-mail inválidos! Preencha corretamente.");
 
         } else {
+            JOptionPane.showMessageDialog(null,"Login realizado com sucesso");
 
             JOptionPane.showMessageDialog(null,sistema);
         }
