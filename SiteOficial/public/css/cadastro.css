@@ -116,6 +116,21 @@ form .input-field:first-child{
     
 }
 
+.btn_cadastrar_agente{
+    margin-top: 2rem;
+    padding: 0.4rem;
+    background: linear-gradient(to left, #FFC702, rgb(174, 174, 15));
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: none;
+}    
+
+.btn_cadastrar_agente:hover{
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #FFC702, rgb(174, 174, 15));
+}
  
 /* o elemento ".underline" se refere a linha abaixo do ipt. O ipt permanece ali, só que flutuando */
 .input-field .underline::before{

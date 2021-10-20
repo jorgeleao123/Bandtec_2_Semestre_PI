@@ -20,17 +20,29 @@
             </div><!--logo-->
             <nav class="desktop-menu">
                 <ul>
+<<<<<<< HEAD:SiteOficial/public/cadastro.html
                     <li><a style="color: #FFC702;"href="">Cadastrar</a></li>
                     <li><a href="tabela.html">Tabela de Funcionários</a></li>
                     <li><a>Logout</a></li>
+=======
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a style="color: #FFC702;" >Cadastrar</a></li>
+                    <li><a href="login.html">Login</a></li>
+>>>>>>> Branch_Flavio:SiteOficial/public/html/cadastro.html
                 </ul>
             </nav>
 
             <nav class="mobile-menu">
                 <ul>
+<<<<<<< HEAD:SiteOficial/public/cadastro.html
                     <li><a href="">Home</a></li>
                     <li><a href="">Cadastrar</a></li>
                     <li><a href="">Logout</a></li>
+=======
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="cadastro.html">Cadastrar</a></li>
+                    <li><a href="login.html">Login</a></li>
+>>>>>>> Branch_Flavio:SiteOficial/public/html/cadastro.html
                 </ul>
             </nav>
         </div><!--container-->
@@ -41,8 +53,13 @@
             <h2>Cadastro</h2>
             <form action="">
                 <div class="input-field">
+<<<<<<< HEAD:SiteOficial/public/cadastro.html
                     <input type="text" name="username" id="username" placeholder="Nome completo">
                     <img src="../img/user-icon.svg" alt="" aria-hidden="true" style="width: 7%; float: left;">
+=======
+                    <input type="text" name="nome" id="nome" placeholder="Nome Completo">
+                    <img src="../img/user_icon.png" alt="" aria-hidden="true" style="width: 7%; float: left;">
+>>>>>>> Branch_Flavio:SiteOficial/public/html/cadastro.html
                     <div class="underline"></div>
                 </div>
 
@@ -59,7 +76,11 @@
                 </div>
 
                 <div class="input-field">
+<<<<<<< HEAD:SiteOficial/public/cadastro.html
                     <input type="password" name="password" id="password" placeholder="Password">
+=======
+                    <input type="password" name="senha" id="senha" placeholder="Senha">
+>>>>>>> Branch_Flavio:SiteOficial/public/html/cadastro.html
                     <img src="../img/senha_icon.png" alt="" aria-hidden="true" style="width: 7%; float: left;">
                     <div class="underline"></div>
                 </div>
@@ -77,6 +98,7 @@
 <script>
 
 
+<<<<<<< HEAD:SiteOficial/public/cadastro.html
     function cadastrar() {
     
            alert("teste")
@@ -107,3 +129,32 @@
         }
     
     </script>
+=======
+function cadastrar() {
+   
+       alert("teste")
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+            
+        }).then(function (response) {
+            if (response.ok) {
+                console.log("Login efetuado com sucesso");
+
+            } else {
+                alert('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    div_erro.innerHTML = resposta;
+                });
+                finalizar_aguardar();
+            }
+        });
+
+        return false;
+    }
+
+</script>
+
+>>>>>>> Branch_Flavio:SiteOficial/public/html/cadastro.html
