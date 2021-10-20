@@ -8,6 +8,8 @@ create table empresa(
     primary key(cnpj_empresa)
 );
 
+select * from empresa;
+
 create table estacao(
 	id_estacao int,
     fk_empresa int,
@@ -16,6 +18,13 @@ create table estacao(
     primary key (id_estacao),
     foreign key (fk_empresa) references empresa(cnpj_empresa)
 );
+
+insert into estacao(fk_empresa, nome_estacao, qnt_totem) values
+	(1, "Barueri", 4),
+    (1, "Pinheiros", 4),
+    (1, "República", 4);
+
+select * from estacao;
 
 create table agente_de_estacao(
 	id_agente int,

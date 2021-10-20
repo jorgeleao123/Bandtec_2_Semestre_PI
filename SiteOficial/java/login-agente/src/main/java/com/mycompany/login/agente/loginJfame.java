@@ -237,6 +237,7 @@ public class loginJfame extends javax.swing.JFrame {
         // TODO add your handling code here:
         Looca looca = new Looca();
         Sistema sistema = looca.getSistema();
+        String redirectURL;
 
         if ("".equals(iptEmail.getText()) || "".equals(iptSenha.getText())) {
 
@@ -250,6 +251,10 @@ public class loginJfame extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null,"Login realizado com sucesso");
 
             JOptionPane.showMessageDialog(null,sistema);
+           
+            redirectURL = http://www.devmedia.com.br/;
+            response.sendRedirect(redirectURL);
+            
         }
 
 

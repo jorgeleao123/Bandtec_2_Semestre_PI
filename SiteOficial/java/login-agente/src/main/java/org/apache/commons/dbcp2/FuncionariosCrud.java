@@ -11,6 +11,12 @@ import javax.sql.DataSource;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import org.springframework.jdbc.core.RowMapper;
+
+import org.springframework.dao.EmptyResultDataAccessException;
+    
 /**
  *
  * @author jotal
@@ -39,11 +45,19 @@ public class FuncionariosCrud {
         @Override
         public Funcionarios mapRow(ResultSet rs, int rowNum) throws SQLException {
             Funcionarios funcionarios = new Funcionarios();
-            Funcionarios.setId(rs.getInt("id_pais"));
-            Funcionarios.setNome(rs.getString("nome_pais"));
-            Funcionarios.setExtensao(rs.getDouble("extensao_km2_pais"));
+            
             return funcionarios;
         }
     }
+    
+    public Map<String, Object> recuperar(int id) {
+        try {
+            Map<String, Object> registro = jdbcTemplate.queryForMap(
+                    "select * from tbl_pais where id_pais = ?", id);
+            return registro;
+        } catch (EmptyResultDataAccessException e) {
+            return null;
+        }
+}
         
 }
