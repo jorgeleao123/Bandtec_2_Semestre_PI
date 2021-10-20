@@ -12,7 +12,7 @@ router.post('/cadastrar', function(req, res, next) {
 	agente_de_estacao.create({
 		nome_agente : req.body.nome,
 		login_agente : req.body.email,
-		estacao_agente: req.body.estacao,
+		fk_estacao: req.body.estacao,
 		senha_agente: req.body.senha,
 	}).then(resultado => {
 		console.log(`Registro criado: ${resultado}`)

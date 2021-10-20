@@ -46,12 +46,6 @@
                 </div>
 
                 <div class="input-field">
-                    <input type="text" name="estacao" id="estacao" placeholder="Estação ">
-                    <img src="../img/localizacao.png" alt="" aria-hidden="true" style="width: 7%; float: left;">
-                    <div class="underline"></div>
-                </div>
-
-                <div class="input-field">
                     <input type="text" name="email" id="email" placeholder="Email">
                     <img src="../img/o-email.png" alt="" aria-hidden="true" style="width: 7%; float: left;">
                     <div class="underline"></div>
@@ -63,8 +57,15 @@
                     <div class="underline"></div>
                 </div>
 
+                <select style="width: 100%;" name="estacao" id="estacao">
+                    <option value="">Escolha a estação</option>
+                    <option value="1000">Barueri</option>
+                    <option value="1002">Pnheiros</option>
+                    <option value="1003">Republica</option>
+                </select>
 
-                <button onclick="return cadastrar()"  method="POST" class="btn_cadastrar_agente">Registrar</button>
+                <button onclick="return cadastrar()" name="form_cadastro" 
+                method="POST" class="btn_cadastrar_agente">Registrar</button>
 
             </form>
         </div>
