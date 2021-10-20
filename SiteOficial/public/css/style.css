@@ -19,6 +19,31 @@ body{
 html{
     scroll-behavior: smooth;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+  } 
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    min-width: 160px;
+    padding: 35px 16px;
+    z-index: 1;
+  }
+  .agente-hover:hover, .gerente-hover:hover{
+    transition: ease-in 0.5s;
+    color: var(--yellow);
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .teste-log:hover{
+    transition: ease-in 0.5s;
+    color: var(--yellow);
+  }
 
 .yellow{
     color: var(--yellow);
