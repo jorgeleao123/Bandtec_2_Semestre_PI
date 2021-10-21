@@ -22,7 +22,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>com.mycompany.login-agente.loginJfame</mainClass>
+                            <mainClass>com.mycompany.login.agente.loginJfame</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -77,5 +77,5 @@
             <!-- ou versão que já existir na .m2 local -->
         </dependency>
     </dependencies>
-    
+    <name>login-agente</name>
 </project>
