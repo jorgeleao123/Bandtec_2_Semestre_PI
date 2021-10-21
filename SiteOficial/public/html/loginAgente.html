@@ -48,10 +48,10 @@
         <div class="form-login">
 
             <!--logo-->
-            <h2>Login</h2>
+            <h2>Login Agente</h2>
             <form action="" id="form_login" method="post" onsubmit="return entrar_login()">
                 <div class="input-field">
-                    <input size="80%" type="text" name="login" id="login" placeholder="CNPJ">
+                    <input size="80%" type="text" name="login" id="login" placeholder="Email">
                     <div class="underline"></div>
                     <!-- <img src="../../SiteOficial/img/logo-home.svg" alt=""> -->
                 </div>
@@ -93,7 +93,7 @@
 
                 resposta.json().then(json => {
 
-                    window.location.href = 'pagina_cadastro.html';
+                    window.location.href = 'dashboard.html';
                 });
 
             } else {

@@ -37,7 +37,7 @@
         <div  class="clear"></div>
 
         <div class="form-login">
-            <h2>Cadastro</h2>
+            <h2>Cadastre seu Agente</h2>
             <form  id="form_cadastro" method="post">
                 <div class="input-field">
                     <input type="text" name="nome" id="nome" placeholder="Nome Completo">
@@ -90,7 +90,8 @@ function cadastrar() {
             
         }).then(function (response) {
             if (response.ok) {
-                console.log("Login efetuado com sucesso");
+                window.location.href = 'tabela.html';
+                console.log("Cadastro efetuado com sucesso");
 
             } else {
                 alert('Erro de cadastro!');
