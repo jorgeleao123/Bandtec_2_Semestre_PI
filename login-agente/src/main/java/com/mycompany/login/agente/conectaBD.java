@@ -3,10 +3,6 @@ package com.mycompany.login.agente;
 
 import org.apache.commons.dbcp2.BasicDataSource;
 
-/**
- *
- * @author flavio
- */
 public class conectaBD {
     
      private final BasicDataSource bancoDeDados;

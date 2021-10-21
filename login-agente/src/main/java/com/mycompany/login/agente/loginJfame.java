@@ -222,15 +222,17 @@ public class loginJfame extends javax.swing.JFrame {
         String senha = iptSenha.getText();
 
         Autenticar autentica = new Autenticar(login, senha);
+        Boolean validacao = autentica.validar();
+        System.out.println(validacao);
 
         if (senha.equals("") || login.equals("Insira seu e-mail") || login.equals("")) {
-
             JOptionPane.showMessageDialog(null, "Há campos em branco! Preencha-os!");
-        } else {
-            autentica.validar();
+        } else if (validacao) {
             infoDados apiTela = new infoDados();
             apiTela.setVisible(true);
             this.dispose();
+        } else {
+            System.out.println("DEU");
         }
 
 
