@@ -17,6 +17,7 @@
 <script type="text/javascript" src="funcoes.js"></script>
 
 
+
 </head>
 <body>
 
@@ -28,7 +29,7 @@
             </div><!--logo-->
             <nav class="desktop-menu">
                 <ul>
-                    <li><a href="cadastro.html">Cadastrar</a></li>
+                    <li><a onclick="cadastro()">Cadastrar</a></li>
                     <li><a style="color: #FFC702;"href="">Tabela de Funcionários</a></li>
                     <li><a >Logout</a></li>
                 </ul>
@@ -36,7 +37,7 @@
 
             <nav class="mobile-menu">
                 <ul>
-                    <li><a href="">Cadastro</a></li>
+                    <li><a  href="">Cadastro</a></li>
                     <li><a href="">Tabela de Funcionários</a></li>
                     <li><a href="">Logout</a></li>
                 </ul>
@@ -313,6 +314,8 @@
         }
     }
 
-
+	function cadastro(){
+		window.location = "../html/cadastro.html";
+	}
 
     </script>
