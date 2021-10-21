@@ -94,9 +94,12 @@ router.post('/autenticar', function(req, res, next) {
 	}).then(resultado => {
 		console.log(`Encontrados: ${resultado.length}`);
 
-		if (resultado.length == 1) {
-			console.log("Login Efetuado");
+		console.log(`Encontrados: ${resultado.length}`);
 
+		if (resultado.length == 1) {
+			sessoes.push(resultado[0].dataValues.login);
+			console.log('sessoes: ',sessoes);
+			res.json(resultado[0]);
 		} else if (resultado.length == 0) {
 			res.status(403).send('Email e/ou senha inválido(s)');
 		} else {
