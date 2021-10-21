@@ -38,12 +38,12 @@ public class loginJfame extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         titulo = new javax.swing.JLabel();
         subtitulo = new javax.swing.JLabel();
-        iptSenha = new javax.swing.JTextField();
         iptEmail = new javax.swing.JTextField();
         btnEntrar = new javax.swing.JButton();
         btnEsqueceuSenha = new javax.swing.JButton();
         logoEmail = new javax.swing.JLabel();
         logoSenha = new javax.swing.JLabel();
+        iptSenha = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -79,18 +79,6 @@ public class loginJfame extends javax.swing.JFrame {
         subtitulo.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         subtitulo.setText("Entre com suas Credênciais:");
 
-        iptSenha.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
-        iptSenha.setForeground(new java.awt.Color(204, 204, 204));
-        iptSenha.setText("Insira sua senha");
-        iptSenha.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                iptSenhaFocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                iptSenhaFocusLost(evt);
-            }
-        });
-
         iptEmail.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         iptEmail.setForeground(new java.awt.Color(204, 204, 204));
         iptEmail.setText("Insira seu e-mail");
@@ -123,6 +111,13 @@ public class loginJfame extends javax.swing.JFrame {
 
         logoSenha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons8-password-30.png"))); // NOI18N
 
+        iptSenha.setText("jPasswordField1");
+        iptSenha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                iptSenhaActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -148,11 +143,12 @@ public class loginJfame extends javax.swing.JFrame {
                                 .addComponent(btnEsqueceuSenha)
                                 .addGap(18, 18, 18)
                                 .addComponent(btnEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(17, 17, 17))
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(iptEmail)
-                                .addComponent(iptSenha, javax.swing.GroupLayout.DEFAULT_SIZE, 338, Short.MAX_VALUE)))
-                        .addGap(45, 45, 45))))
+                                .addGap(62, 62, 62))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(iptEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(iptSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(45, 45, 45))))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -165,15 +161,15 @@ public class loginJfame extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(iptEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(logoEmail))
-                .addGap(27, 27, 27)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(iptSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(logoSenha))
+                .addGap(34, 34, 34)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(logoSenha, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
+                    .addComponent(iptSenha))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnEsqueceuSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnEsqueceuSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -196,6 +192,7 @@ public class loginJfame extends javax.swing.JFrame {
 
     private void btnEsqueceuSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEsqueceuSenhaActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "Envie e-mail ao nosso suporte support@totemhub.atlassian.net");
     }//GEN-LAST:event_btnEsqueceuSenhaActionPerformed
 
     private void iptEmailFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_iptEmailFocusGained
@@ -216,23 +213,6 @@ public class loginJfame extends javax.swing.JFrame {
 
     }//GEN-LAST:event_iptEmailFocusLost
 
-    private void iptSenhaFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_iptSenhaFocusGained
-        // TODO add your handling code here:
-        if (iptSenha.getText().equals("Insira sua senha")) {
-            iptSenha.setText("");
-            iptSenha.setForeground(new Color(153, 153, 153));
-        }
-    }//GEN-LAST:event_iptSenhaFocusGained
-
-    private void iptSenhaFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_iptSenhaFocusLost
-        // TODO add your handling code here:
-
-        if (iptSenha.getText().equals("")) {
-            iptSenha.setText("Insira sua senha");
-            iptSenha.setForeground(new Color(153, 153, 153));
-        }
-    }//GEN-LAST:event_iptSenhaFocusLost
-
     private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
         // TODO add your handling code here:
         Looca looca = new Looca();
@@ -243,22 +223,24 @@ public class loginJfame extends javax.swing.JFrame {
 
         Autenticar autentica = new Autenticar(login, senha);
 
-        if ("".equals(iptEmail.getText()) || "".equals(iptSenha.getText())) {
+        if (senha.equals("") || login.equals("Insira seu e-mail") || login.equals("")) {
 
-            JOptionPane.showMessageDialog(null, "Campos em branco! Preencha corretamente.");
-
-        } else if ("Insira seu e-mail".equals(iptEmail.getText()) || "Insira sua senha".equals(iptSenha.getText())) {
-
-            JOptionPane.showMessageDialog(null, "Senha e/ou e-mail inválidos! Preencha corretamente.");
-
+            JOptionPane.showMessageDialog(null, "Há campos em branco! Preencha-os!");
         } else {
-            JOptionPane.showMessageDialog(null, autentica.validar());
-
-            JOptionPane.showMessageDialog(null, sistema);
+            autentica.validar();
+            infoDados apiTela = new infoDados();
+            apiTela.setVisible(true);
+            this.dispose();
         }
 
 
     }//GEN-LAST:event_btnEntrarActionPerformed
+
+    private void iptSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iptSenhaActionPerformed
+        // TODO add your handling code here:
+       
+        
+    }//GEN-LAST:event_iptSenhaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -300,7 +282,7 @@ public class loginJfame extends javax.swing.JFrame {
     private javax.swing.JButton btnEsqueceuSenha;
     private javax.swing.JLabel descricao;
     private javax.swing.JTextField iptEmail;
-    private javax.swing.JTextField iptSenha;
+    private javax.swing.JPasswordField iptSenha;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel logo;
