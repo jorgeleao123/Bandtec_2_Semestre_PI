@@ -38,6 +38,8 @@ create table agente_de_estacao(
     foreign key(fk_empresa) references empresa(cnpj_empresa)
 );
 
+select * from agente_de_estacao;
+
 create table totem(
 	id_totem int,
     fk_estacao int,

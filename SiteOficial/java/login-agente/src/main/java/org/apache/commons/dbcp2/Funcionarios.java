@@ -4,46 +4,34 @@
  * and open the template in the editor.
  */
 package org.apache.commons.dbcp2;
-
-import java.util.List;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
-
 /**
  *
  * @author jotal
  */
 public class Funcionarios {
     
-    private Integer id;
-    private String nome;
-    private Double extensao;
+    private String login;
+    private String senha;
+    
+    
 // getters e setters
-
 
     // getters e setters
 
-    public Integer getId() {
-        return id;
+    public String getLogin() {
+        return login;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setLogin(String login) {
+        this.login = login;
     }
 
-    public String getNome() {
-        return nome;
+    public String getSenha() {
+        return senha;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 
-    public Double getExtensao() {
-        return extensao;
-    }
-
-    public void setExtensao(Double extensao) {
-        this.extensao = extensao;
-    }
-    
 }

@@ -9,13 +9,18 @@ import com.github.britooo.looca.api.core.Looca;
 import com.github.britooo.looca.api.group.sistema.Sistema;
 import java.awt.Color;
 import javax.swing.JOptionPane;
+import org.apache.commons.dbcp2.DataSource;
+import org.springframework.jdbc.core.JdbcTemplate;
 
 /**
  *
  * @author vitor.herculano
  */
 public class loginJfame extends javax.swing.JFrame {
-
+    
+    DataSource totemhubDataSource = new DataSource();
+    
+    JdbcTemplate configDB = new JdbcTemplate(totemhubDataSource.getTotemHubDataSource());
     /**
      * Creates new form loginJfame
      */
@@ -237,8 +242,7 @@ public class loginJfame extends javax.swing.JFrame {
         // TODO add your handling code here:
         Looca looca = new Looca();
         Sistema sistema = looca.getSistema();
-        String redirectURL;
-
+        
         if ("".equals(iptEmail.getText()) || "".equals(iptSenha.getText())) {
 
             JOptionPane.showMessageDialog(null, "Campos em branco! Preencha corretamente.");
@@ -250,10 +254,21 @@ public class loginJfame extends javax.swing.JFrame {
         } else {
             JOptionPane.showMessageDialog(null,"Login realizado com sucesso");
 
-            JOptionPane.showMessageDialog(null,sistema);
-           
-            redirectURL = http://www.devmedia.com.br/;
-            response.sendRedirect(redirectURL);
+            JOptionPane.showMessageDialog(null,sistema);  
+            
+        }
+        if ("".equals(iptEmail.getText()) || "".equals(iptSenha.getText())) {
+
+            JOptionPane.showMessageDialog(null, "Campos em branco! Preencha corretamente.");
+
+        } else if ("Insira seu e-mail".equals(iptEmail.getText()) || "Insira sua senha".equals(iptSenha.getText())) {
+
+            JOptionPane.showMessageDialog(null, "Senha e/ou e-mail inválidos! Preencha corretamente.");
+
+        } else {
+            JOptionPane.showMessageDialog(null,"Login realizado com sucesso");
+
+            JOptionPane.showMessageDialog(null,sistema);  
             
         }
 
